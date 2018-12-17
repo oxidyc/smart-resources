@@ -7,9 +7,10 @@ Node.js is a JavaScript runtime built on [Chrome's V8 JavaScript engine](https:/
 
 Home：https://nodejs.org
 ## Download
-https://nodejs.org/en/download/
+- 当前版本：https://nodejs.org/en/download/
+- 历史版本：https://nodejs.org/en/download/releases/
 
-Node.js有两个版本，一个是LTS长期支持版本，一个是当前最新版本；推荐下载LTS版本。本文基于`v10.14.2`（包含npm 6.4.1）版本 
+Node.js有两个版本，一个是长期支持版本（LTS，Long Term Support），一个是当前最新版本（Current，Latest Feature）；推荐下载LTS版本。本文基于`LTS v10.14.2 （includes npm 6.4.1）`版本 
 
 x64版本下载地址：https://nodejs.org/dist/v10.14.2/node-v10.14.2-x64.msi
 ## Installation Steps
