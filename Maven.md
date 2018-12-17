@@ -23,10 +23,10 @@ SET JAVA_HOME="D:\DEV_ENV\Java\jdk1.7.0_72"
 
 # 添加到conf/settings.xml 中的<settings>根节点下的<mirrors>节点中
 <mirror>
-<id>nexus-aliyun</id>
-<mirrorOf>*</mirrorOf>
-<name>Nexus aliyun</name>
-<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+  <id>nexus-aliyun</id>
+  <mirrorOf>*</mirrorOf>
+  <name>Nexus aliyun</name>
+  <url>http://maven.aliyun.com/nexus/content/groups/public</url>
 </mirror>
 ```
 ## Resource
