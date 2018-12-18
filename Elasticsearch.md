@@ -9,8 +9,8 @@ https://www.elastic.co/downloads/elasticsearch 本文基于`v6.5.3`版本
 
 https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.zip
 ## Installation Steps
-1.Download and unzip Elasticsearch
-2.Run`bin/elasticsearch` (or `bin\elasticsearch.bat` on Windows)
-3.Run `curl http://localhost:9200/` or `Invoke-RestMedth http://localhost:9200` with PowerShell
+1. Download and unzip Elasticsearch
+2. Run `bin/elasticsearch` (or `bin\elasticsearch.bat` on Windows)
+3. Run `curl http://localhost:9200/` or `Invoke-RestMedth http://localhost:9200` with PowerShell
 ## Settings
 ## Resource

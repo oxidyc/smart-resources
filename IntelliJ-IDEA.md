@@ -40,7 +40,7 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
    - Block Comment at first column （取消，同上）
 - Editor -> File and Code Templates -> Includes
    - File Header 添加如下代码
-   ```
+   ```java
    /**
     * ${NAME} Class
     *

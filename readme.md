@@ -10,7 +10,7 @@
 - Maven 3.6.0
 
 ## Database
-- MongoDB 4
+- MongoDB 4.0.4
 - Navicat 12
 - MariaDB 10.3.x
 - Redis
