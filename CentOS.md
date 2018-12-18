@@ -22,7 +22,7 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
 
 ## Keymap
 
-### 文件与目录操作
+#### 文件与目录操作
 + cd ..                    返回上一级目录
 + cd ../..                 返回上两级目录
 + cp file1 file2           将file1复制为file2
