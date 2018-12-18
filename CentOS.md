@@ -37,10 +37,10 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
 + rm -f file1              删除 ‘file1’
 + rm -rf dir1              删除 ‘dir1’ 目录及其子目录内容
 
-### 查看文件内容
+#### 查看文件内容
 + cat file1                从第一个字节开始正向查看文件的内容
 + head -2 file1            查看一个文件的前两行
-### 文本内容处理
+#### 文本内容处理
 + grep str /tmp/test       在文件 ‘/tmp/test’ 中查找 “str”
 + grep ^str /tmp/test      在文件 ‘/tmp/test’ 中查找以 “str” 开始的行
 + diff file1 file2         找出两个文件的不同处
@@ -50,12 +50,12 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
     + :w        保存当前修改
     + :q        不保存退出vi
     + :wq       保存当前修改并退出vi
-### 压缩、解压
+#### 压缩、解压
 + bzip2 file1               压缩 file1
 + bunzip2 file1.bz2         解压 file1.bz2
 + unzip file1.zip           解压一个zip格式的压缩包到当前目录
 + unzip test.zip -d /tmp/   解压一个zip格式的压缩包到 /tmp 目录
-### 系统相关
+#### 系统相关
 + shutdown -h now           关机
 + shutdown -r now           重启
 
