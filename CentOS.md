@@ -60,3 +60,4 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
 + shutdown -r now           重启
 
 ## Rources
++ https://www.osyunwei.com/archives/7829.html
