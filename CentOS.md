@@ -8,14 +8,22 @@ Home:http://www.centos.org
 
 ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
 ## Installation Steps
-+ 1.选择安装语言 ![Information](image/CentOS-1.png)
++ 1.选择安装语言 
+![LANGUAGE](image/CentOS-1.png)
 + 2.选择安装时间DATE&TIME，设置为亚洲/上海
+![DATETIEM](image/CentOS-2.png)
 + 3.选择系统安装位置INSTALLATION DESTINATION，配置分区
+![DEVICE](image/CentOS-3.png)
     + 3.1 配置/boot分区：500MB
+    ![DEVICE](image/CentOS-3.1.png)
     + 3.2 配置swap分区：2GB
+    ![DEVICE](image/CentOS-3.2.png)
     + 3.3 配置/(剩余空间）
+    ![DEVICE](image/CentOS-3.3.png)
 + 4.选择配置ip地址 NETWORK&HOSTNAME
+![IP](image/CentOS-4.png)
 + 5.开始安装，编辑root密码
+![PASSWORD](image/CentOS-5.png)
 + 6.完成安装
 
 ## Settings
