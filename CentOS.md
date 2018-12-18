@@ -17,11 +17,11 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
 + 3.选择系统安装位置INSTALLATION DESTINATION，配置分区
 
 ![DEVICE](image/CentOS-3.png)
-    + &nbsp;3.1 配置/boot分区：500MB
+    + 3.1 配置/boot分区：500MB
     ![DEVICE](image/CentOS-3.1.png)
-    + &nbsp;3.2 配置swap分区：2GB
+    + 3.2 配置swap分区：2GB
     ![DEVICE](image/CentOS-3.2.png)
-    + &nbsp;3.3 配置/(剩余空间）  
+    + 3.3 配置/(剩余空间）  
     ![DEVICE](image/CentOS-3.3.png)
 + 4.选择配置ip地址 NETWORK&HOSTNAME
 
