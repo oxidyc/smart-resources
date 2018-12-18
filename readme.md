@@ -11,14 +11,14 @@
 
 ## Database
 - MongoDB 4
-- Navicat
+- Navicat 12
 - MariaDB 10.3.x
 - Redis
 - Visual FoxPro 6.0/9.0
 
 ## OS
 - Linux （CentOS 7.x）
-- Windows
+- Windows 7/8/10
 
 ## Container
 - Nginx/OpenResty
@@ -26,6 +26,9 @@
 - Undertow
 
 ## Framework
-- Spring boot
+- Spring boot 2.x
 - Vue.js
 - Lua
+
+## Other
+- JDK 1.7/1.8
