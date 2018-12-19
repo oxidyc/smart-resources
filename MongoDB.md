@@ -12,7 +12,7 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 
 - 1.下载安装包后，双击进行安装，点击next
 
- ![editor](image/MongoDB-1.png)
+  ![editor](image/MongoDB-1.png)
 
 - 2.选择I accept the terms in the License Agreement 后点击下一步
   
@@ -51,9 +51,8 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 + --serviceDisplayName 　 指定服务名称，有多个mongodb服务时执行。
 + --install 　　　　　　　　指定作为一个Windows服务安装。
   
-  ![MONGOD](image/MongoDB-Settings-1.png)
+   ![MONGOD](image/MongoDB-Settings-1.png)
   
-
 
 2.如果安装目录不在C盘下，一定要删除mongod.cfg文件的mp:的参数，否者会出现启动错误
 
@@ -61,7 +60,7 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 
 3.配置完成后，使用管理员身份运行cmd，输入net start MongoDB 启动服务
 
-  ![MONGOD](image/MongoDB-Settings-3.png)
+   ![MONGOD](image/MongoDB-Settings-3.png)
   
 
 ## Resource
