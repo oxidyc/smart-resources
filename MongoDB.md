@@ -19,7 +19,9 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 ## Settings
 
 在安装目录中data新建db文件夹用于存储数据库文件
+
 1.配置文件参数，mongod.cfg文件
+
   打开安装目录下的bin中的mongod.cfg文件，进行配置。
   
   参数 　　　　　　　　　　　描述
