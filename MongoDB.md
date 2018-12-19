@@ -48,7 +48,7 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 + logpath 　　　　　　　　定MongoDB日志文件，注意是指定文件不是目录
 + logappend 　　 　　 　 使用追加的方式写日志
 + dbpath 　　　　　　　　 指定数据库路径
-+ port 　　　　　 　　　　指定服务端口号，默认端口27017+ 
++ port 　　　　　 　　　　指定服务端口号，默认端口27017
 + serviceName    　　　　指定服务名称
 + serviceDisplayName 　 指定服务名称，有多个mongodb服务时执行。
 + install 　　　　　　　　指定作为一个Windows服务安装。
@@ -67,9 +67,7 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
   + net stop MongoDB         关闭MongoDB服务
   
 ## Resource
-
-  http://www.runoob.com/mongodb/mongodb-window-install.html
-  
+ 
   https://www.cnblogs.com/whowhere/p/9637605.html
 
 
