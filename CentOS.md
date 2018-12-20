@@ -5,53 +5,54 @@ CentOS 是一个基于Red Hat Linux 提供的可自由使用源代码的企业�
 
 Home:http://www.centos.org
 ## Download
+- 当前最新版本下载地址：https://www.centos.org/download/
+- 档案版本下载地址：http://wiki.centos.org/Download
 
-ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
+本文基于 `7.6.xxx` 版本，ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
 ## Installation Steps
-1.选择安装语言 
+1. 开机启动界面
 
-![LANGUAGE](image/CentOS-1.png)
+2. 选择安装语言,默认English，English(United States)，点击Continue继续： 
 
-2.选择安装时间`LOCALIZATION -> DATE&TIME`，设置为`Asia/Shanghai`亚洲/上海
+  ![LANGUAGE](image/CentOS-1.png)
 
-![DATETIEM](image/CentOS-2.png)
+3. 选择安装时间`LOCALIZATION -> DATE&TIME`，设置为`Asia/Shanghai`亚洲/上海
 
-3.选择系统安装位置`SYSTEM -> INSTALLATION DESTINATION`，配置分区
+  ![DATETIEM](image/CentOS-2.png)
 
-![DEVICE](image/CentOS-3.png)
+4. 选择系统安装位置`SYSTEM -> INSTALLATION DESTINATION`，配置分区
 
-   3.1 新建`/boot`：`500MB`
-    
+  ![DEVICE](image/CentOS-3.png)
+
+   - 4.1 新建`/boot`：`500MB`
    ![DEVICE](image/CentOS-3.1.png)
     
-   3.2 新建`swap`：`2GB`(当前内存的2倍)
-    
+   - 4.2 新建`swap`：`2GB`(当前内存的2倍)
    ![DEVICE](image/CentOS-3.2.png)
     
-   3.3 新建 `/`: `空` (自动分配所有剩余空间）  
-    
+   - 4.3 新建 `/`: `空` (自动分配所有剩余空间）  
    ![DEVICE](image/CentOS-3.3.png)
     
-4.选择配置ip地址 `NETWORK&HOSTNAME`
+5. 选择配置ip地址 `NETWORK & HOSTNAME`
 
-![IP](image/CentOS-4.png)
+  ![IP](image/CentOS-4.png)
 
-5.开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD`设置root密码
+6. 开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD`设置root密码
 
-![PASSWORD](image/CentOS-5.png)
+  ![PASSWORD](image/CentOS-5.png)
 
-6.完成安装
+7. 完成安装
 
 ## Settings
 
 ## Keymap
 
 #### 文件与目录操作
-+ cd ..                    返回上一级目录
-+ cd ../..                 返回上两级目录
-+ cp file1 file2           将file1复制为file2
-+ cp -a dir1 dir2          复制一个目录
-+ cp -a /tmp/dir1 .        复制一个目录到当前工作目录（.代表当前目录）
++ cd ..                     返回上一级目录
++ cd ../..                  返回上两级目录
++ cp file1 file2            将file1复制为file2
++ cp -a dir1 dir2           复制一个目录
++ cp -a /tmp/dir1 .         复制一个目录到当前工作目录（.代表当前目录）
 + ls                       查看目录中的文件
 + ls -a                    显示隐藏文件
 + pwd                      显示工作路径
