@@ -30,8 +30,18 @@ https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.
 
   ![PATH](image/MongoDB-4.png)
 
-- 5.完成安装
+- 5.点击next
 
+  ![PATH](image/MongoDB-5.png)
+
+- 6.点击next后，出现安装界面，点击Install进行安装
+
+  ![PATH](image/MongoDB-6.png)
+
+- 7.完成安装 
+
+  ![PATH](image/MongoDB-7.png)
+ 
 ## Settings
 
 在安装目录data中新建db文件夹用于存储数据库文件
