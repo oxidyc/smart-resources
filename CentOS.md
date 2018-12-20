@@ -10,10 +10,15 @@ Home:http://www.centos.org
 
 本文基于 `7.6.xxx` 版本，ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
 ## Installation Steps
-1. 开机启动界面
+1. 开机启动界面，选择Install CentOS 7 安装CentOS 7
   
   ![LANGUAGE](image/CentOS-1.png)
-
+ 
+界面说明：
+ - Install CentOS 7 安装CentOS 7
+ - Test this media & install CentOS  7 测试安装文件并安装CentOS 7
+ - Troubleshooting 修复故障
+ 
 2. 选择安装语言,默认English，English(United States)，点击Continue继续： 
 
   ![LANGUAGE](image/CentOS-2.png)
@@ -46,7 +51,7 @@ Home:http://www.centos.org
    - 6.1 设置root密码 `USER SETTINGS -> ROOT PASSWORD`
    ![DEVICE](image/CentOS-6.1.png)
    
-   - 6.1 创建用户`USER SETTINGS -> USER CREATION`
+   - 6.1 创建用户`USER SETTINGS -> CREATE USER`
    ![DEVICE](image/CentOS-6.2.png)
 
 7. 点击Reboot重启完成安装
