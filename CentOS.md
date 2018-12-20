@@ -11,37 +11,47 @@ Home:http://www.centos.org
 本文基于 `7.6.xxx` 版本，ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-DVD-1810.iso
 ## Installation Steps
 1. 开机启动界面
+  
+  ![LANGUAGE](image/CentOS-1.png)
 
 2. 选择安装语言,默认English，English(United States)，点击Continue继续： 
 
-  ![LANGUAGE](image/CentOS-1.png)
+  ![LANGUAGE](image/CentOS-2.png)
 
 3. 选择安装时间`LOCALIZATION -> DATE & TIME`，设置为`Asia/Shanghai`亚洲/上海
 
-  ![DATETIEM](image/CentOS-2.png)
+  ![DATETIEM](image/CentOS-3.png)
 
 4. 选择系统安装位置`SYSTEM -> INSTALLATION DESTINATION`，配置分区
 
-  ![DEVICE](image/CentOS-3.png)
-
+  ![DEVICE](image/CentOS-4.png)
+    
    - 4.1 新建`/boot`：`500MB`
-   ![DEVICE](image/CentOS-3.1.png)
+   ![DEVICE](image/CentOS-4.1.png)
     
    - 4.2 新建`swap`：`2GB`(当前内存的2倍)
-   ![DEVICE](image/CentOS-3.2.png)
+   ![DEVICE](image/CentOS-4.2.png)
     
    - 4.3 新建 `/`: `空` (自动分配所有剩余空间）  
-   ![DEVICE](image/CentOS-3.3.png)
+   ![DEVICE](image/CentOS-4.3.png)
     
 5. 选择配置ip地址 `NETWORK & HOSTNAME`
 
-  ![IP](image/CentOS-4.png)
+  ![IP](image/CentOS-5.png)
 
-6. 开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD`设置root密码
+6. 开始安装，安装过程中设置root密码，`USER SETTINGS -> ROOT PASSWORD`以及选择创建用户，`USER SETTINGS -> USER CREATION`
+  
+  ![PASSWORD](image/CentOS-6.png)
 
-  ![PASSWORD](image/CentOS-5.png)
+   - 6.1 设置root密码 `USER SETTINGS -> ROOT PASSWORD`
+   ![DEVICE](image/CentOS-6.1.png)
+   
+   - 6.1 创建用户`USER SETTINGS -> USER CREATION`
+   ![DEVICE](image/CentOS-6.2.png)
 
-7. 完成安装
+7. 点击Reboot重启完成安装
+
+  ![SUCCESS](image/CentOS-7.png)
 
 ## Settings
 
