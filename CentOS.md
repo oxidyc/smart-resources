@@ -16,7 +16,7 @@ Home:http://www.centos.org
 
   ![LANGUAGE](image/CentOS-1.png)
 
-3. 选择安装时间`LOCALIZATION -> DATE&TIME`，设置为`Asia/Shanghai`亚洲/上海
+3. 选择安装时间`LOCALIZATION -> DATE & TIME`，设置为`Asia/Shanghai`亚洲/上海
 
   ![DATETIEM](image/CentOS-2.png)
 
