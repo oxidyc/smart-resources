@@ -12,31 +12,31 @@ ISO镜像下载地址：http://isoredirect.centos.org/centos/7/isos/x86_64/CentO
 
 ![LANGUAGE](image/CentOS-1.png)
 
-2.选择安装时间DATE&TIME，设置为亚洲/上海
+2.选择安装时间`LOCALIZATION -> DATE&TIME`，设置为`Asia/Shanghai`亚洲/上海
 
 ![DATETIEM](image/CentOS-2.png)
 
-3.选择系统安装位置INSTALLATION DESTINATION，配置分区
+3.选择系统安装位置`SYSTEM -> INSTALLATION DESTINATION`，配置分区
 
 ![DEVICE](image/CentOS-3.png)
 
-   3.1 配置/boot分区：500MB
+   3.1 新建`/boot`：`500MB`
     
    ![DEVICE](image/CentOS-3.1.png)
     
-   3.2 配置swap分区：2GB
+   3.2 新建`swap`：`2GB`(当前内存的2倍)
     
    ![DEVICE](image/CentOS-3.2.png)
     
-   3.3 配置/(剩余空间）  
+   3.3 新建 `/`: `空` (自动分配所有剩余空间）  
     
    ![DEVICE](image/CentOS-3.3.png)
     
-4.选择配置ip地址 NETWORK&HOSTNAME
+4.选择配置ip地址 `NETWORK&HOSTNAME`
 
 ![IP](image/CentOS-4.png)
 
-5.开始安装，编辑root密码
+5.开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD`设置root密码
 
 ![PASSWORD](image/CentOS-5.png)
 
