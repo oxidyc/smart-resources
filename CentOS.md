@@ -61,43 +61,66 @@ Home:http://www.centos.org
 ## Settings
 
 ## Keymap
+- 开关机指令
+```tcl
+shutdown -h now #立刻关机
+shutdown -h 10 #将于10分钟后关闭，且会显示在登录用户的当前屏幕中
+shutdown -h 22:22 #将于指定时刻关机
+shutdown -r now #立刻重启
+shutdown -r +10 #将于10分钟后重启
+reboot #重启
+halt #关机
+init 0
+init 6
+```
+- 防火墙指令
+```
+默认防火墙Firewall指令
+service firewalld start     #启动防火墙
+service firewalld stop      #关闭防火墙
+firewall-cmd --state        #查看防火墙状态，是否开启
+systemctl status firewalld  #查看服务状态
+systemctl enable firewalld.service   #设置开机自动启动
+systemctl disable firewalld.service  #关闭开机自动启动
 
-#### 文件与目录操作
-+ cd ..                     返回上一级目录
-+ cd ../..                  返回上两级目录
-+ cp file1 file2            将file1复制为file2
-+ cp -a dir1 dir2           复制一个目录
-+ cp -a /tmp/dir1 .         复制一个目录到当前工作目录（.代表当前目录）
-+ ls                       查看目录中的文件
-+ ls -a                    显示隐藏文件
-+ pwd                      显示工作路径
-+ mkdir dir1               创建文件夹
-+ mkdir -p /tmp/dir1/dir2  创建一个目录树
-+ mv dir1 dir2             移动/重命名一个目录
-+ rm -f file1              删除 ‘file1’
-+ rm -rf dir1              删除 ‘dir1’ 目录及其子目录内容
+```
+## IP and DNS
+1. 查看IP分配情况
+```tcl
+CentOS最小化安装 没有ifconfig命令。
+# ifconfig 
+# ip addr
+```
+2. 编辑ifcfg-ens33
+```tcl
+# cd /etc/sysconfig/network-scripts
+# vi /etc/sysconfig/network-scripts/ifcfg-ens33
+```
+i 进入编辑模式，编辑后按Esc键，输入:wq 保存并退出
+```powershell
+BOOTPROTO=static        # dhcp -> static
+ONBOOT=yes              # no -> yes，开机启用本配置，一般在最后一行
+IPADDR=10.10.6.128      # 新增，静态IP
+GATEWAY=10.10.6.1       # 新增，默认网关
+NETMASK=255.255.255.0   # 新增，子网掩码
+NM_CONTROLLED=no        # 新增，该接口通过配置文件进行设置，而不是通过网络管理器进行管理
+DNS1=223.5.5.5          # 新增，DNS配置
+DNS2=202.98.0.68
+```
 
-#### 查看文件内容
-+ cat file1                从第一个字节开始正向查看文件的内容
-+ head -2 file1            查看一个文件的前两行
-#### 文本内容处理
-+ grep str /tmp/test       在文件 ‘/tmp/test’ 中查找 “str”
-+ grep ^str /tmp/test      在文件 ‘/tmp/test’ 中查找以 “str” 开始的行
-+ diff file1 file2         找出两个文件的不同处
-+ vi file                  编辑文件
-    + i     	进入编辑文本模式
-    + Esc       退出编辑文本模式
-    + :w        保存当前修改
-    + :q        不保存退出vi
-    + :wq       保存当前修改并退出vi
-#### 压缩、解压
-+ bzip2 file1               压缩 file1
-+ bunzip2 file1.bz2         解压 file1.bz2
-+ unzip file1.zip           解压一个zip格式的压缩包到当前目录
-+ unzip test.zip -d /tmp/   解压一个zip格式的压缩包到 /tmp 目录
-#### 系统相关
-+ shutdown -h now           关机
-+ shutdown -r now           重启
 
+3. 重启网络服务
+```tcl
+# service network restart
+# systemctl restart network.service
+```
+4. 验证网络配置
+
+```tcl
+# ping www.baidu.com
+# ping -c 10 www.baidu.com
+```
+- ping -c N URL 表示ping N次后自动结束，其中N为正整数
+- ctrl + C 退出ping命令
 ## Rources
 + https://www.osyunwei.com/archives/7829.html
