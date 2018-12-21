@@ -89,10 +89,6 @@ firewall-cmd --state        #查看防火墙状态，是否开启
 systemctl status firewalld  #查看服务状态
 systemctl enable firewalld.service   #设置开机自动启动
 systemctl disable firewalld.service  #关闭开机自动启动
-firewall-cmd --zone=public --add-port=80/tcp --permanent   #添加80端口
-firewall-cmd --reload      #更新防火墙规则
-firewall-cmd --zone=public --query-port=80/tcp    #查看端口状态
-firewall-cmd --zone=public --remove-port=80/tcp --permanent    #删除开放的端口
 
 ```
 ## IP and DNS
