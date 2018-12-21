@@ -43,7 +43,7 @@ Home: http://www.nginx.org
   其它版本下载地址为：http://nginx.org/download/
 ## Installation Steps
 
-本文使用wget在在线安装Nginx，如未安装请安装：
+本文使用wget在线安装Nginx，如未安装请安装：
 
 安装wget的指令为: `yum -y install wget`
 
@@ -90,9 +90,9 @@ Home: http://www.nginx.org
 ```
  cd /usr/local                   #切换到/usr/local目录下
  wget http://nginx.org/download/nginx-1.14.2.tar.gz  #使用wget在线下载安装包
- tar -zxvf nginx-1.14.2.tar.gz    #解压安装包
- cd nginx-1.14.2                  #切换到ngixn-1.14.2
- ./configure --user=nobody --group=nobody --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-http_sub_module --with-http_ssl_module   #配置ngixn
+ tar -zxvf nginx-1.14.2.tar.gz   #解压安装包
+ cd nginx-1.14.2                 #切换到ngixn-1.14.2
+ ./configure --user=nobody --group=nobody --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-http_sub_module --with-http_ssl_module   #配置nginx
  make && make install            #安装
 ```
 6. 启动nginx服务，切换到安装目录nginx下的sbin目录
@@ -129,6 +129,6 @@ cd /usr/local/nginx/sbin
 ```
 ## Rources
 
-https://blog.csdn.net/wxyjuly/article/details/79443432
++ https://blog.csdn.net/wxyjuly/article/details/79443432
 
 
