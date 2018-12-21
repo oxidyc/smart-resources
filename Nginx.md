@@ -5,7 +5,7 @@ Nginx (engine x) 是一个高性能的HTTP和反向代理服务，也是一个IM
 
 Home: http://www.nginx.org
 ## Download
-所需安装环境：
+所需环境安装：
 + PCRE库
   
   PCRE(Perl Compatible Regular Expressions) 是一个Perl库，包括 perl 兼容的正则表达式库。nginx 的 http 模块使用 pcre 来解析正则表达式，所以需要在 linux 上安装 pcre 库，pcre-devel 是使用 pcre 开发的一个二次开发库。nginx也需要此库。
