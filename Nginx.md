@@ -126,6 +126,9 @@ cd /usr/local/nginx/sbin
     ./nginx -s stop    #此方式停止步骤是待nginx进程处理任务完毕进行停止。 
     ./nginx -s quit    #此方式相当于先查出nginx进程id再使用kill命令强制杀掉进程。
     ./nginx -s reload  #重新启动nginx服务
+    ./nginx -v         #查看版本
+    ./nginx -t         #查看nginx的配置文件
+    ./nginx -h         #帮助
 ```
 ## Rources
 
