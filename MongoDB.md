@@ -10,7 +10,7 @@ https://www.mongodb.com/download-center/community
 https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.msi
 ## Installation Steps
 
-- <font color=red>1.下载安装包后，双击进行安装，点击next</font>
+- 1.下载安装包后，双击进行安装，点击
 
   ![editor](image/MongoDB-1.png)
 
