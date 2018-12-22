@@ -9,7 +9,7 @@ Home: https://www.mongodb.com/
 本文基于`v4.0.4`版本，下载地址
 https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.4.tgz
 ## Installation Steps
-###前置条件
+### 前置条件
 ```
 # 在/usr/local下创建文件夹mongodb，作为安装目录
 cd /usr/local                        
@@ -21,7 +21,7 @@ mkdir logs
 # 本文使用wget在线安装MongoDB，如未安装请安装：
 yum -y install wget
 ```
-###安装步骤
+### 安装步骤
 
 1. 使用wget 在线下载mongodb-linux-x86_64-4.0.4.tgz包
 ```
