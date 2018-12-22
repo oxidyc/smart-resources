@@ -43,67 +43,47 @@ Home: http://www.nginx.org
   其它版本下载地址为：http://nginx.org/download/
 ## Installation Steps
 
-本文使用wget在线安装Nginx，如未安装请安装：
-
-安装wget的指令为: `yum -y install wget`
-
-1. 安装gcc gcc-c++(如新环境,未安装请先安装)
-
-   指令为：`yum install -y gcc gcc-c++ `
-   
-2. 安装PCRE库，安装目录为：/usr/local/
-
-   指令为:
+### 前置条件
+```tcl
+# wget安装。网络上自动下载文件的自由工具。
+yum -y install wget
+# gcc 安装。编译源码。
+yum install -y gcc gcc-c++
+# pcre pcre-devel 安装。 perl兼容的正则表达式库。
+yum install -y pcre pcre-devel
+# zlib安装。 压缩和解压缩。
+yum install -y zlib zlib-devel
+# OpenSSL安装。安全套接字层密码库。
+yum install -y openssl openssl-devel
 ```
- cd /usr/local                  #切换到/usr/local目录下
- wget http://jaist.dl.sourceforge.net/project/pcre/pcre/8.33/pcre-8.33.tar.gz   #使用wget在线下载安装包
- tar -zxvf pcre-8.33.tar.gz     #解压安装包
- cd pcre-8.33                   #切换到pcre-8.33目录下
- ./configure                    #使用默认配置
- make && make install           #安装
-```
-3. 安装SSL库，安装目录为：/usr/local/
+### 安装步骤
 
-    指令为：
-```
- cd /usr/local                   #切换到/usr/local目录下
- wget http://www.openssl.org/source/openssl-1.0.1j.tar.gz    #使用wget在线下载安装包
- tar -zxvf openssl-1.0.1j.tar.gz #解压安装包
- cd openssl-1.0.1j               #切换到openssl-1.0.1j目录下
- ./config                        #使用默认配置
- make && make install            #安装
- 
-```
-4. 安装zlib库，安装目录为：/usr/local/
-
-    指令为：
-```
- cd /usr/local                   #切换到/usr/local目录下
- wget http://zlib.net/zlib-1.2.11.tar.gz   #使用wget在线下载安装包
- tar -zxvf zlib-1.2.11.tar.gz    #解压安装包
- cd zlib-1.2.11                  #切换到zlib-1.2.11
- ./configure                     #使用默认配置
- make && make install            #安装
-```
-5. 安装Nginx，安装目录为：/usr/local/
-
-    指令为:
+1. 使用wget下载nginx包：
 ```
  cd /usr/local                   #切换到/usr/local目录下
  wget http://nginx.org/download/nginx-1.14.2.tar.gz  #使用wget在线下载安装包
+``` 
+2. 解压nginx二进制包
+```
  tar -zxvf nginx-1.14.2.tar.gz   #解压安装包
+```
+3. 配置nginx，这里使用默认配置
+```
  cd nginx-1.14.2                 #切换到ngixn-1.14.2
- ./configure --user=nobody --group=nobody --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-http_sub_module   #配置nginx
+ ./configure                     #默认配置
+```
+4. 安装
+```
  make && make install            #安装
 ```
-6. 启动nginx服务，切换到安装目录nginx下的sbin目录
+5. 启动nginx服务，切换到安装目录nginx下的sbin目录
 
     指令为：
 ```
  cd /usr/local/nginx/sbin      #切换到sbin目录下
  ./nginx                       #启动nginx
 ```
-7. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到Welcomne to nginx页面，完成安装。
+6. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到Welcomne to nginx页面，完成安装。
 
   ![SUCCESS](image/Nginx-1.png)
 ## Settings
