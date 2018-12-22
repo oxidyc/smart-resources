@@ -23,14 +23,14 @@ yum -y install wget
 ```
 ### 安装步骤
 
-1. 使用wget 在线下载mongodb-linux-x86_64-4.0.4.tgz包
+1. 在/usr/local目录下，使用wget 在线下载mongodb-linux-x86_64-4.0.4.tgz包
 ```
-    cd /usr/local                   #切换到/usr/local目录下
+    cd /usr/local                  
     wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70--4.0.4.tgz   
 ```
 2. 解压`mongodb-linux-x86_64-rhel70-4.0.4.tgz` 二进制包
 ```
-   tar -zxvf mongodb-linux-x86_64-rhel70-4.0.4.tgz
+   tar -zxvf mongodb-linux-x86_64-rhel70-4.0.4.tgz       
 ```
 3. 将`mongodb-linux-x86_64-rhel70-4.0.4` 文件夹下的全部内容移动到/use/local/mongodb文件夹下
 ```
@@ -57,6 +57,18 @@ yum -y install wget
   ![SUCCESS](image/MongoDB-Linux-1.png)
   
 ## Settings
+
+防火墙firewall配置：
+
+相关命令如下：
+
+```
+firewall-cmd --zone=public --add-port=27017/tcp --permanent   #添加27017端口
+firewall-cmd --reload      #更新防火墙规则
+firewall-cmd --zone=public --query-port=27017/tcp    #查看端口状态
+firewall-cmd --zone=public --remove-port=27017/tcp --permanent    #删除开放的端口
+
+```
 
 ## Keymap
 
