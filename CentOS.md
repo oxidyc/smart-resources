@@ -46,22 +46,18 @@ CentOS各版本之间的区别：
     
    - 4.3 新建 `/`: `空` (自动分配所有剩余空间）  
    ![DEVICE](image/CentOS-4.3.png)
-    
-5. 选择配置ip地址 `NETWORK & HOSTNAME`
 
-   ![IP](image/CentOS-5.png)
-
-6. 开始安装，安装过程中设置root密码，`USER SETTINGS -> ROOT PASSWORD`以及选择创建用户，`USER SETTINGS -> USER CREATION`
+5. 开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD` 设置root密码，以及选择`USER SETTINGS -> USER CREATION`创建用户。
   
    ![PASSWORD](image/CentOS-6.png)
 
-   - 6.1 设置root密码 `USER SETTINGS -> ROOT PASSWORD`
+   - 5.1 设置root密码 
    ![DEVICE](image/CentOS-6.1.png)
    
-   - 6.1 创建用户`USER SETTINGS -> CREATE USER`
+   - 5.2 创建用户
    ![DEVICE](image/CentOS-6.2.png)
 
-7. 点击Reboot重启完成安装
+6. 点击Reboot重启完成安装
 
    ![SUCCESS](image/CentOS-7.png)
 
