@@ -72,6 +72,7 @@ Home: http://www.nginx.org
  cd openssl-1.0.1j               #切换到openssl-1.0.1j目录下
  ./config                        #使用默认配置
  make && make install            #安装
+ 
 ```
 4. 安装zlib库，安装目录为：/usr/local/
 
@@ -92,7 +93,7 @@ Home: http://www.nginx.org
  wget http://nginx.org/download/nginx-1.14.2.tar.gz  #使用wget在线下载安装包
  tar -zxvf nginx-1.14.2.tar.gz   #解压安装包
  cd nginx-1.14.2                 #切换到ngixn-1.14.2
- ./configure --user=nobody --group=nobody --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-http_sub_module --with-http_ssl_module   #配置nginx
+ ./configure --user=nobody --group=nobody --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-http_sub_module   #配置nginx
  make && make install            #安装
 ```
 6. 启动nginx服务，切换到安装目录nginx下的sbin目录
