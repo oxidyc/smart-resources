@@ -30,28 +30,28 @@ yum install -y openssl openssl-devel
 
 1. 使用wget下载nginx包：
 ```
- cd /usr/local                   #切换到/usr/local目录下
- wget http://nginx.org/download/nginx-1.14.2.tar.gz  #使用wget在线下载安装包
+ cd /usr/local                  
+ wget http://nginx.org/download/nginx-1.14.2.tar.gz  
 ``` 
 2. 解压`nginx-1.14.2.tar.gz` 二进制包
 ```
- tar -zxvf nginx-1.14.2.tar.gz   #解压安装包
+ tar -zxvf nginx-1.14.2.tar.gz   
 ```
 3. 配置nginx，这里使用默认配置
 ```
- cd nginx-1.14.2                 #切换到ngixn-1.14.2
- ./configure                     #默认配置
+ cd nginx-1.14.2                
+ ./configure                  
 ```
 4. 安装
 ```
- make && make install            #安装
+ make && make install          
 ```
 5. 启动nginx服务，切换到安装目录nginx下的sbin目录
 
     指令为：
 ```
- cd /usr/local/nginx/sbin      #切换到sbin目录下
- ./nginx                       #启动nginx
+ cd /usr/local/nginx/sbin      
+ ./nginx                     
 ```
 6. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到Welcomne to nginx页面，完成安装。
 
