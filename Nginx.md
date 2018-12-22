@@ -33,7 +33,7 @@ yum install -y openssl openssl-devel
  cd /usr/local                   #切换到/usr/local目录下
  wget http://nginx.org/download/nginx-1.14.2.tar.gz  #使用wget在线下载安装包
 ``` 
-2. 解压nginx二进制包
+2. 解压`nginx-1.14.2.tar.gz` 二进制包
 ```
  tar -zxvf nginx-1.14.2.tar.gz   #解压安装包
 ```
