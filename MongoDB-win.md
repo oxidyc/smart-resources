@@ -95,8 +95,11 @@ mongod --config "D:\mongodb\mongo.config" --install --serviceName "MongoDB"
 # sc方式
 sc create MongoDB binPath= "d:\mongodb\bin\mongod.exe --service --config=d:\mongodb\mongo.config"
 ```
-## Keymap
-  
+
+## Command  
   + net start MongoDB        启动MongoDB服务
   + net stop MongoDB         关闭MongoDB服务
   + net restart MongoDB      重启MongoDB服务
+
+
+## Keymap
