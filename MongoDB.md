@@ -15,7 +15,7 @@ https://downloads.mongodb.com/compass/mongodb-compass-1.16.3-win32-x64.exe
 ## Installation Steps
 
 - [Windows Document](MongoDB-win.md)
-- [Linux Document](MongoDB-Linx.md)
+- [Linux Document](MongoDB-Linux.md)
 
 ## Other
 
