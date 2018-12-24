@@ -97,6 +97,105 @@ https://github.com/git-for-windows/git/releases/download/v2.20.1.windows.1/Git-2
 
 ## Settings
 
+## Commands
+- git 命令
+```tcl
+$ git --version ## 查看自带版本
+$ git status ## 查看文件的当前状态
+
+```
+- git config
+```tcl
+# 用户信息（用户名+用户名所绑定的邮箱）
+$ git config --global user.name 'oxidyc'
+$ git config --global user.email oxidyc@163.com
+# 查看配置信息
+$ git config --list 
+# 彩色的git输出
+$ git config color.ui true
+```
+- git 基本操作
+```
+$ git init ## 初始化创建仓库
+$ git add <filename>
+$ git add *
+$ git add *.c
+$ git add readme
+$ git commit -m 'Commit message'
+```
+- git clone 克隆
+```tcl
+$ git clone <repo>
+$ git clone <repo> <directory>
+
+$ git clone git@github.com:<user.name>/<repo.name>.git --SSH协议
+$ git clone git://github.com/<user.name>/<repo.name>.git --GIT协议
+$ git clone https://github.com/<user.name>/<repo.name>.git --HTTPS协议
+# 无法同步或没有权限，403 forbidden while accessing错误解决办法
+$ git clone https://<user.name>:<user.password>@github.com/<user.name>/<repo.name>.git
+```
+参数说明：
+ + repo: Git仓库地址，支持SSH、GIT、HTTPS协议。推荐使用SSH(速度快,配置公钥免输入密码)
+ + directory: 本地目录
+
+- git push
+```
+$ git push origin           ## 将当前分支推送至origin主机的对应分支
+$ git push origin master    ## 如果master不存在，则会被新建
+$ git push -u origin master ## 本地的master分支推送到origin主机，同时指定origin为默认主机
+$ git remote add origin <server> ## 本地仓库关联远端仓库
+```
+
+- git branch (分支)
+```
+$ git branch                    ## 列出分支
+$ git checkout -b feature_x     ## 创建feature_x分支，并切换到分支
+$ git checkout master           ## 切换至主分支
+$ git branch -d feature_x       ## 删掉feature_x分支
+$ git push orgin <branch>       ## 将分支推动到远端仓库
+$ git merge <branch>            ## 合并其他分支到当前分支
+```
+
+- git update & merge
+```
+$ git pull ## 与远程仓库同步，更新本地仓库至最新版本
+$ git merge <branch> ## 合并其他分支到当前分支
+$ git diff <source_branch> <target_branch>
+
+$ git fetch origin
+$ git reset --hard origin/master
+```
+---
+- 比较：
+    - git commit : 是将本地修改过的文件提交到本地库中
+    - git push : 是将本地库中的最新信息发送给远程库
+    - git pull : 是从远程获取最新版本到本地，并自动merge
+    - git fetch : 是从远程获取最新版本到本地，不会自动merge
+    - git merge : 是用于从指定的commit(s)合并到当前分支，用来合并两个分支
+```
+git merge -b //将b分支合并到当前分支
+git pull 相当于 git fetch + git merge
+```
+
+## Github操作方案
+**第一次提交**
+- 方案一：本地创建项目根路径，然后与远程Github关联，之后的操作一样。
+    - 初始化Git仓库： `git init`
+    - 提交改变到缓存：`git commit -m 'description'`
+    - 本地Git仓库关联Github仓库：`git remote add origin git@github.com:oxidyc/smart.git`
+    - 提交到Github中：`git push -u origin master`
+- 方案二：直接从Github中克隆源码到本地，项目根目录也不用创建。
+    - 从Github上克隆项目到本地：`git clone git@github.com:oxidyc/smart.git`
+    - 添加文件：`git add ./*` , 将目录中所有文件添加
+    - 提交缓存：`git commit -m '提交'`
+    - 提交到远程Github仓库：`git push -u origin master `
+
+**之后修改提交**
+ - 与Github远程仓库同步：`git pull`
+ - 查看文件变更：`git status`
+ - 提交代码到本地缓存：`git commit -m 'description'`
+ - 提交代码到远程Github仓库：`git push`
 ## Resource
 - 官方书籍《Pro Git》（中文版）： https://git-scm.com/book/zh/v2
 - https://github.com/xiezongnan/Summarize/blob/master/git/Git_Setup.md
+- git - 简易指南 http://www.bootcss.com/p/git-guide/
