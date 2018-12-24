@@ -26,7 +26,7 @@ CentOS各版本之间的区别：
  - `Test this media & install CentOS 7` 测试安装文件并安装CentOS 7
  - `Troubleshooting` 修复故障
  
-2. 选择安装语言,默认English，English(United States)，点击Continue继续： 
+2. 选择安装语言,默认English，English(United States)，点击Continue继续： `正式生产服务器建议安装英文版本`
 
    ![LANGUAGE](image/CentOS-2.png)
 
@@ -34,24 +34,34 @@ CentOS各版本之间的区别：
 
    ![DATETIEM](image/CentOS-3.png)
 
-4. 选择系统安装位置 `SYSTEM -> INSTALLATION DESTINATION`，配置分区
+4. 选择系统安装位置 `SYSTEM -> INSTALLATION DESTINATION`，进入磁盘分区界面，配置分区
 
    ![DEVICE](image/CentOS-4.png)
     
    - 4.1 新建`/boot`：`500MB`
    ![DEVICE](image/CentOS-4.1.png)
     
-   - 4.2 新建`swap`：`2GB`(当前内存的2倍)
+   - 4.2 新建交换分区`swap`：`2GB`(一般设置为内存的2倍)
    ![DEVICE](image/CentOS-4.2.png)
     
-   - 4.3 新建 `/`: `空` (自动分配所有剩余空间）  
+   - 4.3 新建 `/`: `空` (自动分配所有剩余空间）
    ![DEVICE](image/CentOS-4.3.png)
+   
+   - 4.4 其他
+        - +`/boot` 包含引导系统所需的静态文件，例如Linux内核文件，还有一些引导菜单与开机所需配置文件等等，推荐大小500M。
+        - +`swap` 交换分区，本应该根据内存大小划分，一般服务器配置较高，划分4~8G备用即可。
+        - +`/data`分区在生产服务器建议单独划分出来用于存放数据` 
+        - +`/var` 变化的数据，像日志、缓存等，推荐还是单独划分出来。随着系统的使用该分区会越来越大，空间需求量还是比较大的，特别是一些高负载应用将产生大量日志，推荐100G
+        - `/boot/efi` 固件为UEFI时，必须存在，推荐大小200M。
+        - `/biosboot` 硬盘采用GPT分区，而固件为BIOS时，必须存在，推荐大小2M。 
+        - `/tmp` 放置一些临时文件和程序运行中的临时文件，一些运行高负载的服务器建议划分出来，推荐大小100G。
+        - 建议不要把硬盘全部空间划分，留一部分备用，扩容。
 
 5. 开始安装，安装过程中选择`USER SETTINGS -> ROOT PASSWORD` 设置root密码，以及选择`USER SETTINGS -> USER CREATION`创建用户。
   
    ![PASSWORD](image/CentOS-6.png)
 
-   - 5.1 设置root密码 
+   - 5.1 设置root密码 ，密码长度至少8位。
    ![DEVICE](image/CentOS-6.1.png)
    
    - 5.2 创建用户
@@ -87,43 +97,5 @@ systemctl enable firewalld.service   #设置开机自动启动
 systemctl disable firewalld.service  #关闭开机自动启动
 
 ```
-## IP and DNS
-1. 查看IP分配情况
-```tcl
-CentOS最小化安装 没有ifconfig命令。
-# ifconfig 
-# ip addr
-```
-2. 编辑ifcfg-ens33
-```tcl
-# cd /etc/sysconfig/network-scripts
-# vi /etc/sysconfig/network-scripts/ifcfg-ens33
-```
-i 进入编辑模式，编辑后按Esc键，输入:wq 保存并退出
-```powershell
-BOOTPROTO=static        # dhcp -> static
-ONBOOT=yes              # no -> yes，开机启用本配置，一般在最后一行
-IPADDR=10.10.6.128      # 新增，静态IP
-GATEWAY=10.10.6.1       # 新增，默认网关
-NETMASK=255.255.255.0   # 新增，子网掩码
-NM_CONTROLLED=no        # 新增，该接口通过配置文件进行设置，而不是通过网络管理器进行管理
-DNS1=223.5.5.5          # 新增，DNS配置
-DNS2=202.98.0.68
-```
-
-
-3. 重启网络服务
-```tcl
-# service network restart
-# systemctl restart network.service
-```
-4. 验证网络配置
-
-```tcl
-# ping www.baidu.com
-# ping -c 10 www.baidu.com
-```
-- ping -c N URL 表示ping N次后自动结束，其中N为正整数
-- ctrl + C 退出ping命令
 ## Rources
 + https://www.osyunwei.com/archives/7829.html
