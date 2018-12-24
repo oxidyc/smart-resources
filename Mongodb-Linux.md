@@ -12,7 +12,7 @@ https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.4.tgz
 ### 前置条件
 ```
 # 在/usr/local下创建文件夹mongodb，作为安装目录
-cd /usr/local                        
+cd /usr/local
 mkdir mongodb                    
 # 在mongodb文件夹下创建data/db，用于存储数据库，创建logs，用于存放日志
 cd mongodb
@@ -25,8 +25,8 @@ yum -y install wget
 
 1. 在/usr/local目录下，使用wget 在线下载mongodb-linux-x86_64-4.0.4.tgz包
 ```
-    cd /usr/local                  
-    wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70--4.0.4.tgz   
+    cd /usr/local
+    wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70--4.0.4.tgz
 ```
 2. 解压`mongodb-linux-x86_64-rhel70-4.0.4.tgz` 二进制包
 ```
@@ -43,6 +43,8 @@ yum -y install wget
     dbpath = /usr/local/mongodb/data/db
 # 设置日志文件的存放目录及其日志文件名
     logpath = /usr/local/mongodb/logs/mongodb.log
+# 设置使用追加的方式写日志
+    logappend=true
 # 设置端口号（默认的端口号是 27017）
     port = 27017 
 # 绑定ip,绑定后可以通过ip地址访问mongodb服务
@@ -67,9 +69,12 @@ firewall-cmd --zone=public --add-port=27017/tcp --permanent   #添加27017端口
 firewall-cmd --reload      #更新防火墙规则
 firewall-cmd --zone=public --query-port=27017/tcp    #查看端口状态
 firewall-cmd --zone=public --remove-port=27017/tcp --permanent    #删除开放的端口
-
 ```
 
 ## Keymap
+
+启动服务：
+./mongod --config mongodb.conf
+
 
 ## Resource
