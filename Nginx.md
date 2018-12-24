@@ -5,12 +5,9 @@ Nginx (engine x) 是一个高性能的HTTP和反向代理服务，也是一个IM
 
 Home: http://www.nginx.org
 ## Download
-   
-+ Nginx下载
+  版本下载地址为：http://nginx.org/download/ 
 
-  本文使用的版本是nginx-1.14.2，其下载地址为：http://nginx.org/download/nginx-1.14.2.tar.gz
-  
-  其它版本下载地址为：http://nginx.org/download/
+  本文基于`nginx-1.14.2`版本，下载地址：http://nginx.org/download/nginx-1.14.2.tar.gz
 ## Installation Steps
 
 ### 前置条件
@@ -30,28 +27,28 @@ yum install -y openssl openssl-devel
 
 1. 使用wget下载nginx包：
 ```
- cd /usr/local                  
- wget http://nginx.org/download/nginx-1.14.2.tar.gz  
+ cd /usr/local
+ wget http://nginx.org/download/nginx-1.14.2.tar.gz
 ``` 
 2. 解压`nginx-1.14.2.tar.gz` 二进制包
 ```
- tar -zxvf nginx-1.14.2.tar.gz   
+ tar -zxvf nginx-1.14.2.tar.gz
 ```
 3. 配置nginx，这里使用默认配置
 ```
- cd nginx-1.14.2                
- ./configure                  
+ cd nginx-1.14.2
+ ./configure
 ```
-4. 安装
+4. 安装，默认安装目录为/
 ```
- make && make install          
+ make && make install
 ```
 5. 启动nginx服务，切换到安装目录nginx下的sbin目录
 
     指令为：
-```
- cd /usr/local/nginx/sbin      
- ./nginx                     
+```usr/local/nginx
+ cd /usr/local/nginx/sbin
+ ./nginx
 ```
 6. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到Welcomne to nginx页面，完成安装。
 
