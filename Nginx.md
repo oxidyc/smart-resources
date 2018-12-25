@@ -43,19 +43,21 @@ yum install -y openssl openssl-devel
 ```
  make && make install
 ```
-5. 启动nginx服务，切换到安装目录nginx下的sbin目录
+5. 在/usr/local/nginx/sbin目录下，启动nginx服务
 
-    指令为：
-```usr/local/nginx
+指令为：
+```
  cd /usr/local/nginx/sbin
  ./nginx
 ```
-6. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到Welcomne to nginx页面，完成安装。
-
-  ![SUCCESS](image/Nginx-1.png)
+6. 配置防火墙或关闭防火墙后，在浏览器中输入`http://10.10.6.126:80`查看，显示如下内容表示连接成功。
+ ```
+    Welcome to nginx ......
+```
 ## Settings
 
 防火墙firewall配置：
++ 添加80端口
 
 相关命令如下：
 ```
@@ -66,7 +68,7 @@ firewall-cmd --zone=public --remove-port=80/tcp --permanent    #删除开放的�
 
 ```
 
-## Keymap
+## Command 
 ```
 在nginx安装目录sbin下执行命令：
 cd /usr/local/nginx/sbin
@@ -79,6 +81,8 @@ cd /usr/local/nginx/sbin
     ./nginx -t         #查看nginx的配置文件
     ./nginx -h         #帮助
 ```
+## Keymap
+
 ## Rources
 
 + https://blog.csdn.net/wxyjuly/article/details/79443432
