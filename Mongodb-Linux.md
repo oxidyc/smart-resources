@@ -10,7 +10,7 @@ Home: https://www.mongodb.com/
 https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-4.0.4.tgz
 ## Installation Steps
 ### 前置条件
-```
+```tcl
 # 在/usr/local下创建文件夹mongodb，作为安装目录
 cd /usr/local
 mkdir mongodb                    
@@ -24,37 +24,37 @@ yum -y install wget
 ### 安装步骤
 
 1. 在/usr/local目录下，使用wget 在线下载mongodb-linux-x86_64-4.0.4.tgz包
-```
-    cd /usr/local
-    wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70--4.0.4.tgz
+```tcl
+cd /usr/local
+wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70--4.0.4.tgz
 ```
 2. 解压`mongodb-linux-x86_64-rhel70-4.0.4.tgz` 二进制包
-```
-   tar -zxvf mongodb-linux-x86_64-rhel70-4.0.4.tgz       
+```tcl
+ tar -zxvf mongodb-linux-x86_64-rhel70-4.0.4.tgz
 ```
 3. 将`mongodb-linux-x86_64-rhel70-4.0.4` 文件夹下的全部内容移动到/use/local/mongodb文件夹下
-```
-    mv mongodb-linux-x86_64-rhel70-4.0.4/* /usr/local/mongodb/
+```tcl
+mv mongodb-linux-x86_64-rhel70-4.0.4/* /usr/local/mongodb/
 ```
 4. 在bin目录下创建mongodb.conf配置文件，并且添加配置
-```
-    vi mongodb.conf
+```tcl
+vi mongodb.conf
 # 设置数据文件的存放目录
-    dbpath = /usr/local/mongodb/data/db
+dbpath = /usr/local/mongodb/data/db
 # 设置日志文件的存放目录及其日志文件名
-    logpath = /usr/local/mongodb/logs/mongodb.log
+logpath = /usr/local/mongodb/logs/mongodb.log
 # 设置使用追加的方式写日志
-    logappend=true
+logappend=true
 # 设置端口号（默认的端口号是 27017）
-    port = 27017 
-# 绑定服务IP，若绑定127.0.0.1，则只能本机访问，若绑定0.0.0.0，则可以被本地所有IP访问
-    bind_ip=0.0.0.0
+port = 27017 
+# 绑定服务IP，若绑定IP地址，则只能此IP地址访问；若绑定127.0.0.1，则只能本机访问；若绑定0.0.0.0，则可以被本地所有IP访问。
+bind_ip=10.10.6.33
 ```
 5. 在/usr/local/mongodb/bin下，启动mongodb服务。
+```tcl
+./mongod --config mongodb.conf
 ```
-    ./mongod –-config mongodb.conf
-```
-6. 配置防火墙或关闭防火墙后，在浏览器中输入`http://10.10.6.126:27017/`查看，显示如下内容表示连接成功。
+6. 配置防火墙或关闭防火墙后，在浏览器中输入`http://10.10.6.33:27017/`查看，显示如下内容表示连接成功。
   ```
     It looks like you are trying to access MongoDB over HTTP on the native driver port.
   ```
