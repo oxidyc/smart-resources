@@ -76,6 +76,8 @@ CentOS各版本之间的区别：
 ## Settings
 
 ## Keymap
+
+## Command
 - 开关机指令
 ```tcl
 shutdown -h now #立刻关机

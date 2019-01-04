@@ -47,20 +47,22 @@ yum -y install wget
     logappend=true
 # 设置端口号（默认的端口号是 27017）
     port = 27017 
-# 绑定ip,绑定后可以通过ip地址访问mongodb服务
-    bind_ip=10.10.6.126
+# 绑定服务IP，若绑定127.0.0.1，则只能本机访问，若绑定0.0.0.0，则可以被本地所有IP访问
+    bind_ip=0.0.0.0
 ```
-5. 启动mongodb服务
+5. 在/usr/local/mongodb/bin下，启动mongodb服务。
 ```
-    ./mongod –config mongodb.conf
+    ./mongod –-config mongodb.conf
 ```
-6. 配置防火墙或关闭防火墙后，在浏览器中输入ip+端口号即可访问到页面，完成安装。
-
-  ![SUCCESS](image/MongoDB-Linux-1.png)
+6. 配置防火墙或关闭防火墙后，在浏览器中输入`http://10.10.6.126:27017/`查看，显示如下内容表示连接成功。
+  ```
+    It looks like you are trying to access MongoDB over HTTP on the native driver port.
+  ```
   
 ## Settings
 
 防火墙firewall配置：
++ 添加27017端口
 
 相关命令如下：
 
@@ -71,7 +73,7 @@ firewall-cmd --zone=public --query-port=27017/tcp    #查看端口状态
 firewall-cmd --zone=public --remove-port=27017/tcp --permanent    #删除开放的端口
 ```
 
-## Keymap
+## Command
 
 启动服务：
 ./mongod --config mongodb.conf
