@@ -14,7 +14,7 @@ http://mirrors.hust.edu.cn/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.
 ## Installation Steps
  下载apache-maven-3.6.0-bin.zip后解压到d:\DEV_ENV目录下，完成安装。
 ## Settings
-```
+```xml
 # 在bin/mvn.cmd中第17行添加JDK路径
 SET JAVA_HOME="D:\DEV_ENV\Java\jdk1.7.0_72"
 

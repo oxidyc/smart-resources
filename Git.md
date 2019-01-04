@@ -199,3 +199,4 @@ git pull 相当于 git fetch + git merge
 - 官方书籍《Pro Git》（中文版）： https://git-scm.com/book/zh/v2
 - https://github.com/xiezongnan/Summarize/blob/master/git/Git_Setup.md
 - git - 简易指南 http://www.bootcss.com/p/git-guide/
+- git超详细教程 https://www.cnblogs.com/zhoushihui/p/6018354.html

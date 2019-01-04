@@ -32,16 +32,35 @@ https://vscode.cdn.azure.cn/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/VSCo
 ![success](image/vscode-8.png)
 ## Settings
 1. 设置
+
+修改 `settings.json`
 ```json
 {
+    // 控制字体系列。默认为 Consolas, 'Courier New', monospace
+    "editor.fontFamily": "PingFang SC, Fira Code Light, Consolas, 'Courier New', monospace",
     //设置主题样式
     "workbench.colorTheme": "One Dark Pro Vivid",
-    //设置字体
-    "editor.fontSize": 16
+    //设置字体，默认12
+    "editor.fontSize": 16,
+    //设置自动保存，默认off
+    "files.autoSave": "onFocusChange"
 }
 ```
+  - 中文语言环境设置：
+
+    操作步骤：快捷键`Ctrl + Shift + P` -> `Configure Display Language` ( `配置显示语言`) -> `en` 改为 `zh-CN` -> 保存 `locale.json` -> 扩展中搜索出品自Microsoft的 `Chinese (Simplified) Language Pack for Visual Studio Code` -->安装扩展->重启VSCode
+
+ 修改 `locale.json`
+```json
+{
+    "locale":"zh-CN"
+}
+```
+
 2. 安装插件
-    - Dracule Official
-    - One Dark Pro
-    - HTML CSS Support
+    - Dracule Official （Dracula Theme）
+    - One Dark Pro （binaryify）
+    - HTML CSS Support （ecmel）
+    - ESLint （Dirk Baeumer）
+    - Chinese (Simplified) Language Pack for Visual Studio Code （Microsoft）
 ## Resource
