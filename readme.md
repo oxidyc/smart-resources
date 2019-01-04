@@ -13,7 +13,8 @@
 - [MongoDB](MongoDB.md) 4.0.4
 - [Navicat](Navicat.md) 12
 - MariaDB 10.3.x
-- Redis
+- [PostgreSQL](PostgreSQL.md)
+- [Redis](Redis.md)
 - Visual FoxPro 6.0/9.0
 
 ## OS
