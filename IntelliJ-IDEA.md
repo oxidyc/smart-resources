@@ -47,7 +47,7 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
       * @version 1.0, ${YEAR}-${MONTH}-${DAY} ${TIME}
       */
       ```
-      > `用户名` 命名规则 : 姓名中的姓全拼并且首字母大写，名拼音首字母。当姓名为两个字时，名全拼
+      > `用户名` 命名规则 : 使用固定的英文名称；或使用姓名，其中姓的全拼并且首字母大写，名的拼音首字母。当姓名为两个字时，名使用全拼。例如张三 -> Zhangsan ； 王小五 -> Wangxw
 - Editor -> File Encodings (UTF-8, 复选Transparent native-to-ascii conversion)
 - plugins
    - 安装插件lombok Plugin 
