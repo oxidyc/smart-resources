@@ -47,12 +47,12 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
       * @version 1.0, ${YEAR}-${MONTH}-${DAY} ${TIME}
       */
       ```
-      > `用户名` 命名规则 
+      > `用户名` 命名规则 : 姓名中的姓全拼并且首字母大写，名拼音首字母。当姓名为两个字时，名全拼
 - Editor -> File Encodings (UTF-8, 复选Transparent native-to-ascii conversion)
 - plugins
-   - 安装插件lombok Plugin （Lombok 功能辅助插件）
-   - 安装插件Alibaba Java Coding Guidelines （阿里巴巴出的代码规范检查插件）
-   - 安装插件.ignore (各类版本控制忽略文件生成工具)
+   - 安装插件lombok Plugin 
+   - 安装插件Alibaba Java Coding Guidelines 
+   - 安装插件.ignore
 - Version Control -> Git
    - Path to Git executable: c:\Program Files\Git\cmd\git.exe
 - Build,Execution,Deployment -> Build Tools -> Maven
@@ -63,10 +63,10 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
    - Import Maven projects automatically （复选）
 
 ## Plugins
-- Lombok Plugin
-- Alibaba Java Coding Guidelines
+- Lombok Plugin（Lombok 功能辅助插件）
+- Alibaba Java Coding Guidelines（阿里巴巴出的代码规范检查插件）
 - SonarLint
-- .ignore
+- .ignore  (各类版本控制忽略文件生成工具)
 - Kotlin
 ## Keymap Reference
 
