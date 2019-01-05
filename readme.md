@@ -1,13 +1,13 @@
 # Smart Framework Environment Documents
 
 ## IDE
-- [IntelliJ IDEA](IntelliJ-IDEA.md) 2018.3
+- [JetBrains IntelliJ IDEA](JetBrains-IntelliJ-IDEA.md) 2018.3
 - [JetBrains WebStorm](JetBrains-WebStorm.md) 2018.3
 - Postman （Restful API）6.4
 - [Axure RP](AxureRP.md) 8.1.0.3381
 - [Git](Git.md) 2.20.1
 - [NodeJS](NodeJS.md) 10.14.1
-- [Maven](Maven.md) 3.6.0
+- [Apache Maven](Apache-Maven.md) 3.6.0
 
 ## Database
 - [MongoDB](MongoDB.md) 4.0.4
@@ -23,8 +23,8 @@
 
 ## Container
 - [Nginx](Nginx.md)/OpenResty
-- Jetty
-- Undertow
+- Eclipse Jetty
+- JBoss Undertow
 
 ## Framework
 - Spring boot 2.x
