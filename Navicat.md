@@ -29,3 +29,4 @@ https://www.navicat.com.cn/download/navicat-premium
 ## Settings
 
 ## Resource
+- https://www.jianshu.com/p/5f693b4c9468

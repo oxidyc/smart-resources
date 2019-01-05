@@ -11,7 +11,6 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
 ## Installation Steps
 
 ## Settings
-
 - Appearance & Behavior -> Appearance -> Windows Options
   - Show memory indicator （复选,显示内存使用情况）
 - Appearance & Behavior -> System Settings
@@ -40,14 +39,15 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
    - Block Comment at first column （取消，同上）
 - Editor -> File and Code Templates -> Includes
    - File Header 添加如下代码
-   ```java
-   /**
-    * ${NAME} Class
-    *
-    * @author <b>用户名</b>, Copyright &#169; 2018
-    * @version 1.0, ${YEAR}-${MONTH}-${DAY} ${TIME}
-   */
-   ```
+      ```java
+      /**
+      * ${NAME} Class
+      *
+      * @author <b>用户名</b>, Copyright &#169; 2018
+      * @version 1.0, ${YEAR}-${MONTH}-${DAY} ${TIME}
+      */
+      ```
+      > `用户名` 命名规则 
 - Editor -> File Encodings (UTF-8, 复选Transparent native-to-ascii conversion)
 - plugins
    - 安装插件lombok Plugin （Lombok 功能辅助插件）
@@ -61,7 +61,42 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
    - Local repository : D:\DEV_ENV\MVN_REPO ; 复选Override
 - Build,Execution,Deployment -> Build Tools -> Maven -> Importing
    - Import Maven projects automatically （复选）
+
+## Plugins
+- Lombok Plugin
+- Alibaba Java Coding Guidelines
+- SonarLint
+- .ignore
+- Kotlin
 ## Keymap Reference
 
 ## Resource
 - IntelliJ-IDEA-Tutorial：https://github.com/judasn/IntelliJ-IDEA-Tutorial
+
+
+## Previous Releases
+ https://www.jetbrains.com/idea/download/previous.html
+ - ` Version：`[2018.3.2](https://download.jetbrains.com/idea/ideaIU-2018.3.2.exe) `Build：`183.4886.37 `Released：`December 18, 2018
+- ` Version：`[2018.3.1](https://download.jetbrains.com/idea/ideaIU-2018.3.1.exe) `Build：`183.4588.61 `Released：`December 5, 2018
+- `Version：`[2018.2.7](https://download.jetbrains.com/idea/ideaIU-2018.2.7.exe)
+`Build：`182.5107.41 `Released：`November 27, 2018
+- `Version：`[2018.1.7](https://download.jetbrains.com/idea/ideaIU-2018.1.7.exe)
+`Build：`181.5540.23 `Released：`November 20, 2018
+- `Version：`[2017.3.6](https://download.jetbrains.com/idea/ideaIU-2017.3.6.exe)
+`Build：`173.4674.60 `Released：`November 20, 2018
+- `Version：`[2017.2.7](https://download.jetbrains.com/idea/ideaIU-2017.2.7.exe)
+`Build：`172.4574.19 `Released：`March 2, 2018
+- `Version：`[2017.1.6](https://download.jetbrains.com/idea/ideaIU-2017.1.6.exe)
+`Build：`171.4694.73 `Released：`March 5, 2018
+- `Version：`[2016.3.8](https://download.jetbrains.com/idea/ideaIU-2016.3.8.exe)
+`Build：`163.15529.8 `Released：`March 5, 2018
+- `Version：`[2016.2.5](https://download.jetbrains.com/idea/ideaIU-2016.2.5.exe)
+`Build：`162.2228.15 `Released：`October 17, 2016
+- `Version：`[2016.1.4](https://download.jetbrains.com/idea/ideaIU-2016.1.4.exe)
+`Build：`145.2070.6 `Released：`August 3, 2016
+- `Version：`[15.0.6](https://download.jetbrains.com/idea/ideaIU-15.0.6.exe)
+`Build：`143.2370.31 `Released：`November 2, 2015
+- `Version：`[14.1.7](https://download.jetbrains.com/idea/ideaIU-14.1.7.exe)
+`Build：`141.3058 `Released：`May 11, 2016
+- `Version：`[14.0.5](https://download.jetbrains.com/idea/ideaIU-14.0.5.exe)
+`Build：`139.1803 `Released：`May 12, 2016
