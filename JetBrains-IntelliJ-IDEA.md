@@ -9,10 +9,10 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
 
 申请地址：https://www.jetbrains.com/student/   或   https://www.jetbrains.com/zh/student/
 ## Installation Steps
-1. UI Themes
+1. **UI Themes**
    - Darcule（深色主题）
    - Light
-2. Default plugins
+2. **Default plugins**
    - Java Frameworks
       - 复选：Hibernate、Spring、Java EE、 AspectJ
    - Build Tools（默认）
