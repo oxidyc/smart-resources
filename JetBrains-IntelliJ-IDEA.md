@@ -9,7 +9,27 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
 
 申请地址：https://www.jetbrains.com/student/   或   https://www.jetbrains.com/zh/student/
 ## Installation Steps
-
+1. UI Themes
+   - Darcule（深色主题）
+   - Light
+2. Default plugins
+   - Java Frameworks
+      - 复选：Hibernate、Spring、Java EE、 AspectJ
+   - Build Tools（默认）
+   - Web Development
+      - 复选：HTML、Less、CSS、Sass、JavaScript
+   - Version Controls
+      - 复选：Git、Github、Subversion
+   - Test Tools（默认）
+   - Application Servers
+      - 复选：Tomcat and TomEE、Jetty
+   - Clouds
+      - 全部取消复选
+   - Swing（默认）
+   - Android（默认）
+   - Database Tools（默认）
+   - Other Tools（默认）
+   - Plugin Development（默认）
 ## Settings
 - Appearance & Behavior -> Appearance -> Windows Options
   - Show memory indicator （复选,显示内存使用情况）
@@ -29,11 +49,11 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
   - Match case 选择 First letter only
 - Editor -> General -> Editor Tabs
   - Show tabs in one row （取消，多行显示打开的文件）
-  - Tab limit：15 (默认10，可以增加打开的文件 Tab 个数，当我们打开的文件超过该个数的时候，早打开的文件会被新打开的替换)
-- Editor -> Font (Font: Fira Code； Size: 14)
+  - Tab limit：`15` (默认10，可以增加打开的文件 Tab 个数，当我们打开的文件超过该个数的时候，早打开的文件会被新打开的替换)
+- Editor -> Font (Font: `Fira Code`； Size: `14`)
 - Editor -> Code Style -> Java -> Imports
-   - Class count to use import with \'*\':99；
-   - Names counts to use static import with \'*\':99
+   - Class count to use import with \'*\':`99`；
+   - Names counts to use static import with \'*\':`99`
 - Editor -> Code Style -> Java -> Code Generation -> Comment Code
    - Line Comment at first column （取消，单行注释的两个斜杠跟随在代码的头部，而非行头部）
    - Block Comment at first column （取消，同上）
@@ -48,17 +68,17 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
       */
       ```
       > `用户名` 命名规则 : 使用固定的英文名称；或使用姓名，其中姓的全拼并且首字母大写，名的拼音首字母。当姓名为两个字时，名使用全拼。例如张三 -> Zhangsan ； 王小五 -> Wangxw
-- Editor -> File Encodings (UTF-8, 复选Transparent native-to-ascii conversion)
+- Editor -> File Encodings (`UTF-8`, 复选Transparent native-to-ascii conversion)
 - plugins
-   - 安装插件lombok Plugin 
+   - 安装插件Lombok Plugin 
    - 安装插件Alibaba Java Coding Guidelines 
    - 安装插件.ignore
 - Version Control -> Git
-   - Path to Git executable: c:\Program Files\Git\cmd\git.exe
+   - Path to Git executable: `c:\Program Files\Git\cmd\git.exe`
 - Build,Execution,Deployment -> Build Tools -> Maven
-   - Maven home directory：Bundled(Maven 3，3.3.9) 或者 自定义 D:/DEV_ENV/apache-maven-3.6.0
-   - User settings file: D:\DEV_ENV\apache-maven-3.6.0\conf\settings.xml ；复选Override
-   - Local repository : D:\DEV_ENV\MVN_REPO ; 复选Override
+   - Maven home directory：`Bundled(Maven 3，3.3.9)` 或者 自定义 `D:/DEV_ENV/apache-maven-3.6.0`
+   - User settings file: `D:\DEV_ENV\apache-maven-3.6.0\conf\settings.xml` ；复选Override
+   - Local repository : `D:\DEV_ENV\MVN_REPO` ; 复选Override
 - Build,Execution,Deployment -> Build Tools -> Maven -> Importing
    - Import Maven projects automatically （复选）
 
