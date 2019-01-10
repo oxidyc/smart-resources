@@ -78,6 +78,7 @@ DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
 ```
 ----
 下表汇总了电子商务示例的大多数RESTful实现所采用的常见约定：
+
 | Resource           | POST | GET | PUT | DELETE |
 |--------           | ----| ----| ---| ---|
 |/users                | 创建一个新的User | 检索所有Users | 批量更新Users | 删除所有Users|
