@@ -90,6 +90,7 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
 - SonarLint
 - .ignore  (各类版本控制忽略文件生成工具)
 - Kotlin
+- Gitee（Oschina开源中国码云官方插件）
 ## Keymap Reference
 
 ## Resource

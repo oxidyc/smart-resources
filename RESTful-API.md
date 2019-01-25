@@ -85,6 +85,18 @@ DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
 |/users/1             | `error` | 检索User=1的详细 | 更新User=1的详细信息（如果存在） | 删除User=1的User |
 |/users/1/orders   | 为User=1创建一个新的order | 检索User=1的所有orders | 批量更新User=1的orders | 删除User=1的所有orders |
 
+使用对比
+
+| http方法 | 资源操作 | 幂等 | 安全 |
+| ---       | ---        | --- | --- | 
+| GET       | SELECT  | 是   | 是   |
+| POST     | INSERT   | 否   | 否   |
+| PUT       | UPDATE  | 是   | 否   |
+| DELETE | DELETE   | 是   | 否   |
+
+- 幂等性：对同一REST接口的多次访问，得到的资源状态是相同的
+- 安全性：对该REST接口访问，不会使服务器端资源的状态方法改变
+
 6. `过滤信息（Filtering）`。如果记录数量很多，服务器不可能都将他们返回给用户。API应该提供参数，过滤返回结果。下面是一些常用的参数。
 ```css
 ?limit=10：指定返回记录的数量
@@ -133,6 +145,26 @@ DELETE /collection/resource：返回一个空文档
 - 服务器返回的数据格式，应该尽量使用JSON，避免使用XML
 
 
+## Pagination(分页)
+- page
+- pre_page
+- offset
+- limit
+
+## 速率限制（Rate Limiting）
+为防止滥用，你应该考虑对您的 API 限流。 例如，您可以限制每个用户 10 分钟内最多调用 API 100 次。 如果在规定的时间内接收了一个用户大量的请求，将返回响应状态代码 429 (这意味着过多的请求)。
+
+当速率限制被激活，默认情况下每个响应将包含以下HTTP头发送目前的速率限制信息：
+- `X-Rate-Limit-Limit`：同一个时间段所允许的请求的最大数目；
+- `X-Rate-Limit-Remaining`：在当前时间段内剩余的请求的数量；
+- `X-Rate-Limit-Reset`：为了得到最大请求数所等待的秒数。
+
+### 常见的限流算法
+- 漏桶算法（Leaky Bucket）
+- 令牌桶算法（Tocken Bucket）
+
+Google 开源工具包guava提供了限流工具类RateLimiter，该类基于“令牌桶算法”，非常方便使用。该类的接口描述请参考：[RateLimiter接口描述](http://docs.guava-libraries.googlecode.com/git-history/master/javadoc/com/google/common/util/concurrent/RateLimiter.html)，具体的使用请参考：[RateLimiter使用实践](http://java.dzone.com/articles/ratelimiter-discovering-google)。
+
 ## Resource
 - https://en.wikipedia.org/wiki/Representational_state_transfer
 - 微软的 [API设计](https://docs.microsoft.com/zh-cn/azure/architecture/best-practices/api-design)，[API design英文版](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
@@ -144,3 +176,4 @@ DELETE /collection/resource：返回一个空文档
 - [跟着 Github 学习 Restful HTTP API 设计](http://cizixs.com/2016/12/12/restful-api-design-guide/)
 - [Github API](https://developer.github.com/v3/)
 - https://www.zhihu.com/question/28557115
+- [RateLimit -- 使用guava来做接口限流](https://blog.csdn.net/jiesa/article/details/50412027)
