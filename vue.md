@@ -35,6 +35,7 @@ webpack 版本
       ![Information](image/vue-2.png)
       
       其中：
+      
       Install vue-router?            ##是否安装vue-router
       
       Use ESLint to lint your code ？##是否使用ESLint管理你的代码  
