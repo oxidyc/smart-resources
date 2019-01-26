@@ -1,14 +1,8 @@
 # vue  Tutorial
 
 ## Introduce
-node.js版本 
-  v10.13.0
-  
-vue 版本
-  v2.9.6
 
-webpack 版本
-  v4.29.0
+https://cn.vuejs.org/
 ## Download
 
 ## Installation Steps
@@ -24,25 +18,26 @@ webpack 版本
      cnpm install --global vue-cli
 ```
  ### 安装步骤
+ 
    1. 使用webpack模板创建项目，在项目根目录中打开命令窗口并执行以下命令：
    
       vue init webpack projectName         ## projectName为项目名
      
-      ![Information](image/vue-1.png)
+      ![Information](../image/vue-1.png)
      
       创建过程中需要进行一些配置，默认回车即可
       
-      ![Information](image/vue-2.png)
+      ![Information](../image/vue-2.png)
       
       其中：
       
       Install vue-router?            ##是否安装vue-router
       
-      Use ESLint to lint your code ？##是否使用ESLint管理你的代码  
+      Use ESLint to lint your code ？##是否使用ESLint管理你的代码
            
    2. 出现如下信息，说明创建成功；
    
-      ![Information](image/vue-3.png)
+      ![Information](../image/vue-3.png)
      
    3. 进入到项目的根目录中，执行npm run dev 启动vue项目
    
@@ -52,7 +47,7 @@ webpack 版本
      
    4. 出现如下界面说明，项目启动成功，即可在浏览器中访问
    
-      ![Information](image/vue-4.png)
+      ![Information](../image/vue-4.png)
       
 ## Settings
 ```tcl
@@ -69,6 +64,8 @@ webpack 版本
       import axios from 'axios';
       import VueAxios from 'vue-axios';
       Vue.use(VueAxios, axios)
+  3.配置ESLint
+      https://blog.csdn.net/hsl0530hsl/article/details/78594973
 ```
 ## Command 
     1.启动vue项目
