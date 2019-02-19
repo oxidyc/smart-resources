@@ -18,3 +18,8 @@ Win+R运行 -> regedit -> 依次打开路径
 创建DWORD(32位)值 AllowEncryptionOracle = 2
 然后重启
 ```
+
+
+## Resource
+- https://www.cnbeta.com/articles/tech/805675.htm
+- https://www.cnbeta.com/articles/tech/804437.htm

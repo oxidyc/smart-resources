@@ -30,3 +30,5 @@ public abstract class IdEntity{}
 ## Resource
 - https://blog.csdn.net/u012326462/article/details/83019954
 - https://www.cnblogs.com/lknny/p/5757784.html
+- https://itwenti.com/?p=239
+- https://blog.csdn.net/bruce128/article/details/80298808

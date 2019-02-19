@@ -148,6 +148,15 @@ simpleModule.addSerializer(Long.TYPE, ToStringSerializer.instance);
 objectMapper.registerModule(simpleModule);
 ```
 
+## ObjectMapper中writeValue和writeValueAsString的区别
+- writeValue(param,obj)
+  - param
+    - File: 将对象转为json字符串，保存到指定的文件中
+    - Write：将对象转为json字符串，并将json数据填充到字符输出流中
+    - outputStream：将对象转为json字符串，并将json数据填充到字节输出流中
+- writeValueAsString(obj)
+  - 将对象转为json字符串
+
 ## Resources
 - https://blog.csdn.net/my_flash/article/details/50802961
 - https://www.jianshu.com/p/d29b9f32e5fe
@@ -157,3 +166,11 @@ objectMapper.registerModule(simpleModule);
 - [jackson中自定义处理序列化和反序列化](https://blog.csdn.net/zhao1949/article/details/79281967)
 - [jackson annotations注解详解](https://blog.csdn.net/sdyy321/article/details/40298081)
 - [spring学习笔记---Jackson的使用和定制](https://www.cnblogs.com/mumuxinfei/p/4761374.html)
+- [json字符串与Object、List、Map的互转工具类](https://blog.csdn.net/moneyshi/article/details/44852343)
+- [Jackson 工具类使用及配置指南](https://blog.csdn.net/kobejayandy/article/details/45869861)
+- [jackson对枚举类型的序列化](https://blog.csdn.net/cover1231988/article/details/76021527)
+- [如何使用Jackson自定义JSON反序列化?](https://cloud.tencent.com/developer/ask/57244)
+- [SpringMVC中使用jackson返回json时如何将枚举转为json](https://segmentfault.com/q/1010000006935643?_ea=1182544)
+- http://blog.csdn.net/sdyy321/article/details/40298081
+- [jackson enum 枚举转换](https://deeplyloving.iteye.com/blog/2173168)
+- [ObjectMapper 的一些坑](https://blog.csdn.net/zxc_user/article/details/79713586)
