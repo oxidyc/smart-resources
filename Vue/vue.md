@@ -23,11 +23,11 @@ https://cn.vuejs.org/
    
       vue init webpack projectName         ## projectName为项目名
      
-      ![Information](../image/vue-1.png)
+      ![create-project](../image/vue-1.png)
      
       创建过程中需要进行一些配置，默认回车即可
       
-      ![Information](../image/vue-2.png)
+      ![init-webpack-project](../image/vue-2.png)
       
       其中：
       
@@ -37,7 +37,7 @@ https://cn.vuejs.org/
            
    2. 出现如下信息，说明创建成功；
    
-      ![Information](../image/vue-3.png)
+      ![create-success](../image/vue-3.png)
      
    3. 进入到项目的根目录中，执行npm run dev 启动vue项目
    
@@ -47,7 +47,7 @@ https://cn.vuejs.org/
      
    4. 出现如下界面说明，项目启动成功，即可在浏览器中访问
    
-      ![Information](../image/vue-4.png)
+      ![project-run](../image/vue-4.png)
       
 ## Settings
 ```tcl
