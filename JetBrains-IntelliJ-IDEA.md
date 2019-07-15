@@ -75,6 +75,9 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows �
    - 安装插件Lombok Plugin 
    - 安装插件Alibaba Java Coding Guidelines 
    - 安装插件.ignore
+   - 主题插件[Dark Purple theme](https://plugins.jetbrains.com/plugin/12100-dark-purple-theme) （2019.1版本以上）
+   - 主题插件[Cyan Light Theme](https://plugins.jetbrains.com/plugin/12102-cyan-light-theme)（2019.1版本以上）
+   - 主题插件[Gray Theme](https://plugins.jetbrains.com/plugin/12103-gray-theme)
 - Version Control -> Git
    - Path to Git executable: `c:\Program Files\Git\cmd\git.exe`
 - Build,Execution,Deployment -> Build Tools -> Maven

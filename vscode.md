@@ -58,9 +58,10 @@ https://vscode.cdn.azure.cn/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/VSCo
 ```
 
 2. 安装插件
-    - Dracule Official （Dracula Theme）
-    - One Dark Pro （binaryify）
-    - HTML CSS Support （ecmel）
-    - ESLint （Dirk Baeumer）
-    - Chinese (Simplified) Language Pack for Visual Studio Code （Microsoft）
+    - Dracule Official （Dracula Theme）：主题包
+    - One Dark Pro （binaryify）：主题包
+    - HTML CSS Support （ecmel）：智能提示
+    - ESLint （Dirk Baeumer）：代码检测工具
+    - Chinese (Simplified) Language Pack for Visual Studio Code （Microsoft）：简体中文语言包
+    - Vetur（Pine Wu）：vue.js 高亮插件
 ## Resource
