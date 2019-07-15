@@ -25,7 +25,7 @@
 - CSV：Comma-Separated Values（逗号分隔值）
 ## D
 - DI：Dependency Injection
-- 
+- DDD：Domain Driven Design（领域驱动设计）
 ## E
 - EJB：Enterprise JavaBeans
 ## F
@@ -34,11 +34,13 @@
 ## I
 ## J
 - JDO：Java Data Objects
+- JWT：JSON Web Token
 ## K
 ## L
 ## M
 ## N
 ## O
+- OIDC：OpenID Connect
 ## P
 - PDF：Portable Document Format（便携式文档格式）
 - POJO：Plain Old Java Objects
