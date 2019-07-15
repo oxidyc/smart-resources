@@ -9,13 +9,14 @@ https://cn.vuejs.org/
 
 ### 前置条件
 ```tcl
-  + 安装node.js
-  + 安装webpack
-     cnpm install webpack -g
-  + 安装vue
-     cnpm install vue
-  + 全局安装 vue-cli
-     cnpm install --global vue-cli
+  + 安装node.js  v10.13.0
+  + 安装npm  v6.4.1
+  + 安装webpack  
+     npm install webpack -g
+  + 安装vue  v2.9.6
+     npm install vue
+  + 全局安装 vue-cli  ## vue脚手架
+     npm install --global vue-cli  
 ```
  ### 安装步骤
  
@@ -31,9 +32,9 @@ https://cn.vuejs.org/
       
       其中：
       
-      Install vue-router?            ##是否安装vue-router
+      Install vue-router?            ##是否安装vue-router默认选中yes
       
-      Use ESLint to lint your code ？##是否使用ESLint管理你的代码
+      Use ESLint to lint your code ？##是否使用ESLint管理你的代码默认选择yes
            
    2. 出现如下信息，说明创建成功；
    
@@ -66,6 +67,11 @@ https://cn.vuejs.org/
       Vue.use(VueAxios, axios)
   3.配置ESLint
       https://blog.csdn.net/hsl0530hsl/article/details/78594973
+      使用：   "generator-star-spacing": 0       ##生成器函数*的前后空格
+               "indent": ["error",2]             ##缩进风格2个空格
+               "linebreak-style": [0, "windows"] ##换行风格
+               "quotes": [1, "single"]           ##引号类型 ''
+               "semi": [2, "always"]             ##语句强制分号结尾
 ```
 ## Command 
     1.启动vue项目
@@ -73,7 +79,8 @@ https://cn.vuejs.org/
 ## Keymap
 
 ## Rources
-+  https://www.cnblogs.com/wx1993/p/6136892.html
-+  https://www.cnblogs.com/hasubasora/p/7118846.html
++  https://www.cnblogs.com/wx1993/p/6136892.html             ##vue使用webpack创建项目
++  https://www.cnblogs.com/hasubasora/p/7118846.html         ##安装axios
++  https://element.eleme.cn/#/zh-CN/component/installation   ##element组件安装及其使用
 
 
