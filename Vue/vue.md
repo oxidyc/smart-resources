@@ -11,14 +11,17 @@ https://cn.vuejs.org/
 ```tcl
   + 安装node.js  v10.13.0
   + 安装npm  v6.4.1
-  + 安装webpack  
+  + 全局安装webpack  
      npm install webpack -g
   + 安装vue  v2.9.6
-     npm install vue
-  + 全局安装 vue-cli  ## vue脚手架
-     npm install --global vue-cli  
+     npm install vue    ##安装最新版本的vue
+     npm install vue@(版本号)   ##安装指定版本的vue
+  + 安装 vue-cli  ## vue脚手架
+     npm install vue-cli  
 ```
- ### 安装步骤
+ ### 创建项目
+    >项目名：vuetest
+    >项目根目录：D:/test/
  
    1. 使用webpack模板创建项目，在项目根目录中打开命令窗口并执行以下命令：
    
@@ -31,10 +34,21 @@ https://cn.vuejs.org/
       ![init-webpack-project](../image/vue-2.png)
       
       其中：
+      Project name (projectName)     ##项目名称
+      
+      Project description (A Vue.js project) ## 项目描述
+      
+      Author ##作者
       
       Install vue-router?            ##是否安装vue-router默认选中yes
       
       Use ESLint to lint your code ？##是否使用ESLint管理你的代码默认选择yes
+      
+      Pick an ESLint preset (Use arrow keys) ##选择一个预置ESLint（使用箭头键）
+      
+      Setup unit tests with Karma + Mocha? (Y/n) ##是否安装单元测试，自己选择
+      
+      Setup e2e tests with Nightwatch(Y/n)? ##是否安装e2e测试 ，自己选择
            
    2. 出现如下信息，说明创建成功；
    
@@ -65,41 +79,13 @@ https://cn.vuejs.org/
       import axios from 'axios';
       import VueAxios from 'vue-axios';
       Vue.use(VueAxios, axios)
-  3.解决跨域问题
-  (1).在config下新建dev-host.js,并在文件中添加后台访问地址
-      'use strict'
-        module.exports={
-            devApiHost:"http://10.10.6.38:8080"   //后端访问地址
-        }
-  (2).在config/index.js中进行相关配置
-    调用:const devHost = require('./dev-host')
-    配置:重新index.js里面的proxyTable
-    其中:
-    target: devHost.devApiHost//源地址
-    changeOrigin: true //是否跨域
-    pathRewrite: {'^/': '/'} //路径重写
-    具体配置：
-    proxyTable: {
-      '/': {
-        target: devHost.devApiHost,
-        changeOrigin: true,
-        pathRewrite: {
-          '^/': '/'
-        }
-      }
-    }
-    配置完成后，在前端页面方法中调用即可完成前后端交互
-    this.axios.get(api).then((response) => {
-      console.log(response.data)
-    })
-  4.配置ESLint
-      https://blog.csdn.net/hsl0530hsl/article/details/78594973
+  3.配置ESLint  在.eslintrc.js文件中的rules中配置
+      https://blog.csdn.net/hsl0530hsl/article/details/78594973  ##具体配置参考
       使用：   "generator-star-spacing": 0       ##生成器函数*的前后空格
                "indent": ["error",2]             ##缩进风格2个空格
                "linebreak-style": [0, "windows"] ##换行风格
                "quotes": [1, "single"]           ##引号类型 ''
                "semi": [2, "always"]             ##语句强制分号结尾
-  
 ```
 ## Command 
     1.启动vue项目
