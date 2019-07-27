@@ -88,6 +88,10 @@ https://cn.vuejs.org/
         }
       }
     }
+    配置完成后，在前端页面方法中调用即可完成前后端交互
+    this.axios.get(api).then((response) => {
+      console.log(response.data)
+    })
   4.配置ESLint
       https://blog.csdn.net/hsl0530hsl/article/details/78594973
       使用：   "generator-star-spacing": 0       ##生成器函数*的前后空格
