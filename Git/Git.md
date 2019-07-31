@@ -3,7 +3,7 @@
 ## Introduce
 Git is a free and open source distributed version control system designed to handle everything from small to very large project with speed and efficiency。
 
-Git是分布式版本控制系统
+Linux之父Linus Torvalds在2005年发布了Git，Git是分布式版本控制系统，
 
 Home：https://git-scm.com/
 ## Download
@@ -247,3 +247,4 @@ git pull 相当于 git fetch + git merge
 - https://github.com/xirong/my-git
 - https://github.com/oldratlee/translations/blob/master/git-workflows-and-tutorials/README.md
 - http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
+- [SourceTree安装和使用](https://blog.csdn.net/xiang__liu/article/details/80768944)
