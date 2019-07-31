@@ -1,7 +1,7 @@
 # Glossary
 ## A
 - ACID：Atomicity-Consistency-Isolation-Durability（数据库事务执行四要素，原子性-一致性-隔离性-持久性）
-- AOP：Aspect-Oriented Programming
+- AOP：Aspect-Oriented Programming（面向切面编程）
 ## B
 ## C
 - CRUD：Create-Read-Update-Delete
@@ -22,10 +22,13 @@
 - CRO：Chief Risk Officer（首席风险官），公司，高层
 - CTO：Chief Technology Officer（首席技术官），公司，高层
 - CVO：Chief Valuation Officer（评估总监） 
+- CVS：Concurrent Version System
+- CVCS：Centralized Version Control System（集中化的版本控制系统），版本控制系统
 - CSV：Comma-Separated Values（逗号分隔值）
 ## D
 - DI：Dependency Injection
 - DDD：Domain Driven Design（领域驱动设计）
+- DVCS：Distributed Version Control System（分布式版本控制系统），版本控制系统
 ## E
 - EJB：Enterprise JavaBeans
 ## F
@@ -41,6 +44,7 @@
 ## N
 ## O
 - OIDC：OpenID Connect
+- OOP：Object-Oriented Programming（面向对象编程）
 ## P
 - PDF：Portable Document Format（便携式文档格式）
 - POJO：Plain Old Java Objects
@@ -55,6 +59,7 @@
 - UPMS：User Permissions Management System （通用用户权限管理系统）
 ## V
 - VP：Vice President（副总裁），公司
+- VCS：Version Control System（版本控制系统）
 ## W
 ## X
 ## Y

@@ -43,7 +43,11 @@ https://vscode.cdn.azure.cn/stable/c6e592b2b5770e40a98cb9c2715a8ef89aec3d74/VSCo
     //设置字体，默认12
     "editor.fontSize": 16,
     //设置自动保存，默认off
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 0,
+    //解决内置终端字体间隔过大问题，修改默认“”值为等宽字体样式
+    "terminal.integrated.fontFamily": "Lucida Console",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
 }
 ```
   - 中文语言环境设置：

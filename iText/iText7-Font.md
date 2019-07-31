@@ -48,3 +48,15 @@ PdfFont yaHei = PdfFontFactory.createFont("c://windows//fonts//msyh.ttc,0", PdfE
 
 ## Resource 
 - https://www.cnblogs.com/albertay/p/6610667.html
+- https://blog.csdn.net/u012397189/article/details/79915660
+- https://blog.csdn.net/u012397189/article/details/79898880
+- https://blog.csdn.net/u012397189/article/details/79888252
+- https://blog.csdn.net/u012397189/article/details/79834501
+- https://blog.csdn.net/u012397189/article/details/78471319
+- https://blog.csdn.net/fu250/article/details/52471142
+- https://www.cnblogs.com/xiaoSY-learning/p/5805577.html
+
+- https://itextpdf.com/en/resources/examples/itext-7/event-handlers-and-renderers
+- https://itextpdf.com/ja/resources/installation-guides/installing-itext-7-core-java-developers
+- https://itextpdf.com/en/resources/api-documentation/itext-7-java
+- https://itextpdf.com/en/resources/examples
