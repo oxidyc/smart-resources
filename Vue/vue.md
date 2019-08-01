@@ -63,22 +63,52 @@ https://cn.vuejs.org/
    4. 出现如下界面说明，项目启动成功，即可在浏览器中访问
    
       ![project-run](../image/vue-4.png)
-      
-## Settings
+
+## 常见问题
 ```tcl
- 使用VSCode启动vue项目
-  1. 安装element-ui插件和引用
-      安装：npm i element-ui -S
-      引用：在src/main.js中引入
-      import ElementUI from 'element-ui'
-      import 'element-ui/lib/theme-chalk/index.css'
-      Vue.use(ElementUI)
-  2. 安装axiox插件和引用
-      安装：npm install --save axios vue-axios
-      引用：在src/main.js中引入
-      import axios from 'axios';
-      import VueAxios from 'vue-axios';
-      Vue.use(VueAxios, axios)
+# 问题1：
+   { parser: "babylon" } is deprecated; we now treat it as { parser: "babel" }.
+# 解决办法：
+   找到你的工程文件夹里的 YourProName\node_modules\vue-loader\lib\template-compiler\index.js 文件
+   将 babylon 改为 babel，重新运行即可。
+```     
+## Settings
+- **`安装Element-UI插件及设置`**
+
+在终端中输入如下命令进行安装Element-UI组件
+```tcl
+# npm install element-ui -S
+```
+在 `src/main.js`文件中引入
+```javascript
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
+```
+- **`安装axios插件及设置`**
+```tcl
+# npm install -g --save axios vue-axios 
+```
+在 `src/main.js` 文件中引入
+```javascript
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+//Vue.use(VueAxios, axios)
+Vue.prototype.$axios = axios // 全局注册，使用方法为：this.$axios
+```
+- **`安装qs插件及设置`**
+```tcl
+# npm install -g -S qs.js
+```
+在 `src/main.js` 文件中引入
+```JavaScript
+import qs from 'qs' // 能把json格式的直接转成data所需的格式
+
+Vue.prototype.qs = qs // 全局注册，使用方法为：this.qs
+```
+
+```tcl
   3.解决跨域问题
     (1).在config下新建dev-host.js,并在文件中添加后台访问地址
         'use strict'
