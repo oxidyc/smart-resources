@@ -22,6 +22,10 @@ https://cn.vuejs.org/
 #安装vue脚手架 vue-cli
      npm install vue-cli  
 ```
+
+- vue-router：一般单页面应用SPA都要用到的前端路由
+- vuex：一个转为vue.js应用程序开发的状态管理模式
+
  ### 创建项目
  1. 项目基本信息
  ```tcl
@@ -115,6 +119,8 @@ import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 ```
 - **`安装axios插件及设置`**
+
+组件主页：https://github.com/axios/axios
 ```tcl
 # npm install -g --save axios vue-axios 
 ```
@@ -126,6 +132,8 @@ import VueAxios from 'vue-axios'
 Vue.prototype.$axios = axios // 全局注册，使用方法为：this.$axios
 ```
 - **`安装qs插件及设置`**
+
+组件主页：https://github.com/ljharb/qs
 ```tcl
 # npm install -g -S qs.js
 ```
@@ -135,6 +143,52 @@ import qs from 'qs' // 能把json格式的直接转成data所需的格式
 
 Vue.prototype.qs = qs // 全局注册，使用方法为：this.qs
 ```
+- **`安装crypto-js组件及设置`**
+
+组件主页：https://github.com/brix/crypto-js
+```tcl
+# npm install -g crypto-js
+```
+在 vue文件中引入
+```js
+import CryptoJS from 'crypto-js'
+
+const key CryptoJS.enc.Utf8.parse('123456')
+```
+- **`安装NProgress加载进度条组件及设置`**
+
+组件主页：http://ricostacruz.com/nprogress/     Github主页：https://github.com/rstacruz/nprogress
+```tcl
+# npm install -g nprogress --save
+```
+在 `src/routes.js` 或 `src/main.js`文件中引入
+```js
+// 用法
+NProgress.start()
+NProgress.done()
+
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
+// 配置NProgress进度条选项  —— 动画效果
+NProgress.configure({ ease: 'ease', speed: 500 })
+
+router.beforeEach((to, from, next) => {
+   NProgress.start()
+   next()
+})
+
+router.afterEach(() => {
+   NProgress.done()
+})
+```
+修改NProgress颜色。在 App.vue 文件的 style 中增加
+```css
+#nprogress .bar {
+   background: red !important; //自定义颜色
+}
+```
+
 ## Command 
 1. 启动vue项目
 ```tcl
@@ -154,5 +208,6 @@ Vue.prototype.qs = qs // 全局注册，使用方法为：this.qs
 +  https://www.cnblogs.com/wx1993/p/6136892.html             ##vue使用webpack创建项目
 +  https://www.cnblogs.com/hasubasora/p/7118846.html         ##安装axios
 +  https://element.eleme.cn/#/zh-CN/component/installation   ##element组件安装及其使用
++  https://blog.csdn.net/wn1245343496/article/details/82151273
 
 

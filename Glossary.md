@@ -33,27 +33,44 @@
 - EJB：Enterprise JavaBeans
 ## F
 ## G
+- GC：Garbage Collection（垃圾收集）
 ## H
+- HMAC：Hash-based Message Authentication Code
+- HTTPS：Hypertext Transfer Protocol Secure（安全超文本传输协议），端口443
 ## I
 ## J
 - JDO：Java Data Objects
 - JWT：JSON Web Token
+- JVM：Java Virtual Machine（Java虚拟机）
 ## K
 ## L
 ## M
+- MIS：Management Information System（管理信息系统）
+- MLC：Multi-Level Cell（多层单元），存储单元，2bit/cell，速度一般、寿命一般、价格一般，3k-1w次擦写
 ## N
+- NLA：Network Level Authentication（网络级身份验证，网络层认证），在RDP中使用的技术
 ## O
 - OIDC：OpenID Connect
 - OOP：Object-Oriented Programming（面向对象编程）
+- OSI：Open System Interconnection（开放式系统互联）
 ## P
 - PDF：Portable Document Format（便携式文档格式）
 - POJO：Plain Old Java Objects
 ## Q
+- QLC：Quad-Level Cell（），存储单元，4bit/cell
 ## R
 - RBAC：Role-Based Access Control（基于角色的访问控制）
+- RDP：Remote Desktop Protocol（远程桌面协议）
 ## S
+- SLC：Single-Level Cell（单层单元），存储单元，1bit/cell，速度快、寿命长、价格贵，10w次擦写
+- SSL：Secure Sockets Layer（安全套接层）
+- SSO：Single Sign On（单点登录）
 ## T
+- TCP：Transmission Control Protocol（传输控制协议）
+- TLC：Triple-Level Cell（），存储单元，3bit/cell，速度慢、寿命短、价格便宜，500次擦写
+- TLS：Transport Layer Security（传输层安全），前身SSL
 ## U
+- UDP：User Datagram Protocol（用户数据报协议），传输层协议
 - URI：Uniform Resource Identifiers（统一资源标识符）
 - URL：Uniform Resource Locator（统一资源定位符）
 - UPMS：User Permissions Management System （通用用户权限管理系统）
