@@ -1,9 +1,12 @@
 # Glossary
 ## A
 - ACID：Atomicity-Consistency-Isolation-Durability（数据库事务执行四要素，原子性-一致性-隔离性-持久性）
+- AES：Advanced Encryption Standard（高级加密标准，Rijindael加密法），加密算法，对称加密，速度快，安全级别高
 - AOP：Aspect-Oriented Programming（面向切面编程）
+- ATM：Automated Teller Machine（自动取款机）
 ## B
 ## C
+- CA：Certificate Authority（证书授权中心）
 - CRUD：Create-Read-Update-Delete
 - CAO：Chief Artistic Officer（艺术总监）
 - CBO：Chief Brand Officer（首席品牌官）
@@ -25,10 +28,15 @@
 - CVS：Concurrent Version System
 - CVCS：Centralized Version Control System（集中化的版本控制系统），版本控制系统
 - CSV：Comma-Separated Values（逗号分隔值）
+- CSPRNG：Cryptographically Secure Pseudo-Random Number Generator（密码学安全伪随机数生成器），密码学
 ## D
 - DI：Dependency Injection
 - DDD：Domain Driven Design（领域驱动设计）
+- DLP：Data leakage prevention（数据泄露防护）/ Data Loss prevention（数据丢失防护）
 - DVCS：Distributed Version Control System（分布式版本控制系统），版本控制系统
+- DES：Data Encryption Standard（数据加密标准），加密算法，对称加密，速度快，适用于加密大量数据的场合
+- DSA：Digital Signature Algorithm（），加密算法
+- DSS：Digital Signature Standard（），加密算法
 ## E
 - EJB：Enterprise JavaBeans
 ## F
@@ -45,6 +53,8 @@
 ## K
 ## L
 ## M
+- MD：Message Digest（消息摘要），消息摘要算法
+- MAC：Message Authentication Code（消息认证码），消息摘要算法
 - MIS：Management Information System（管理信息系统）
 - MLC：Multi-Level Cell（多层单元），存储单元，2bit/cell，速度一般、寿命一般、价格一般，3k-1w次擦写
 ## N
@@ -59,9 +69,13 @@
 ## Q
 - QLC：Quad-Level Cell（），存储单元，4bit/cell
 ## R
+- RAID：Redundant Arrays of Independent Drivers（磁盘阵列）
 - RBAC：Role-Based Access Control（基于角色的访问控制）
 - RDP：Remote Desktop Protocol（远程桌面协议）
+- RDS：Remote Desktop Services（远程桌面服务）
+- RSA：Rivest Shamir Adleman（），加密算法，非对称加密
 ## S
+- SHA：Secure Hash Algorithm（安全散列算法），密码散列函数，消息摘要算法
 - SLC：Single-Level Cell（单层单元），存储单元，1bit/cell，速度快、寿命长、价格贵，10w次擦写
 - SSL：Secure Sockets Layer（安全套接层）
 - SSO：Single Sign On（单点登录）
@@ -75,9 +89,15 @@
 - URL：Uniform Resource Locator（统一资源定位符）
 - UPMS：User Permissions Management System （通用用户权限管理系统）
 ## V
+- VDI：Virtual Desktop Infrastructure（虚拟桌面基础架构），云桌面
 - VP：Vice President（副总裁），公司
 - VCS：Version Control System（版本控制系统）
 ## W
 ## X
 ## Y
 ## Z
+
+
+## Other
+- System Requirement Analysis and Feasibility Analysis（系统需求分析与可行性分析）
+- Technology Roadmap（技术路线）

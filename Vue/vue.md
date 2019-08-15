@@ -145,7 +145,7 @@ Vue.prototype.qs = qs // 全局注册，使用方法为：this.qs
 ```
 - **`安装crypto-js组件及设置`**
 
-组件主页：https://github.com/brix/crypto-js
+JavaScript library of crypto standards. Github：https://github.com/brix/crypto-js
 ```tcl
 # npm install -g crypto-js
 ```
