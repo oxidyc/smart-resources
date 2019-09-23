@@ -47,8 +47,8 @@ vue init webpack <projectName>         ## projectName为项目名
    - Project name (projectName)     ##项目名称
    - Project description (A Vue.js project) ## 项目描述
    - Author ##作者
-   - Install vue-router?            ##是否安装vue-router默认选中yes
-   - Use ESLint to lint your code ？##是否使用ESLint管理你的代码默认选择yes
+   - Install vue-router?            ##是否安装路由vue-router默认选中yes
+   - Use ESLint to lint your code ？##是否使用语法检查ESLint管理你的代码默认选择yes
    - Pick an ESLint preset (Use arrow keys) ##选择一个预置ESLint（使用箭头键）
    - Setup unit tests with Karma + Mocha? (Y/n) ##是否安装单元测试，自己选择
    - Setup e2e tests with Nightwatch(Y/n)? ##是否安装e2e测试 ，自己选择

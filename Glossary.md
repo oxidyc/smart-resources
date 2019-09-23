@@ -5,6 +5,7 @@
 - AOP：Aspect-Oriented Programming（面向切面编程）
 - ATM：Automated Teller Machine（自动取款机）
 ## B
+- BSD：Berkeley Software Distribution（伯克利软件套件），开源协议
 ## C
 - CA：Certificate Authority（证书授权中心）
 - CRUD：Create-Read-Update-Delete
@@ -42,10 +43,13 @@
 ## F
 ## G
 - GC：Garbage Collection（垃圾收集）
+- GPL：GNU General Public License（），开源协议
 ## H
 - HMAC：Hash-based Message Authentication Code
 - HTTPS：Hypertext Transfer Protocol Secure（安全超文本传输协议），端口443
 ## I
+- IDC：Internet Data Center（互联网数据中心）
+- IPO：Initial Public Offering（首次公开募股，首次公开发行股票）
 ## J
 - JDO：Java Data Objects
 - JWT：JSON Web Token
@@ -56,9 +60,11 @@
 - MD：Message Digest（消息摘要），消息摘要算法
 - MAC：Message Authentication Code（消息认证码），消息摘要算法
 - MIS：Management Information System（管理信息系统）
+- MIT：Massachusetts Institute Of Technology（MIT许可协议、X条款、X11条款），开源协议，源于麻省理工学院
 - MLC：Multi-Level Cell（多层单元），存储单元，2bit/cell，速度一般、寿命一般、价格一般，3k-1w次擦写
 ## N
 - NLA：Network Level Authentication（网络级身份验证，网络层认证），在RDP中使用的技术
+- NFC：Near Field Communication（近场通信）
 ## O
 - OIDC：OpenID Connect
 - OOP：Object-Oriented Programming（面向对象编程）
@@ -66,6 +72,7 @@
 ## P
 - PDF：Portable Document Format（便携式文档格式）
 - POJO：Plain Old Java Objects
+- PRD：Product Requirement Document（产品需求文档）
 ## Q
 - QLC：Quad-Level Cell（），存储单元，4bit/cell
 ## R
@@ -77,8 +84,12 @@
 ## S
 - SHA：Secure Hash Algorithm（安全散列算法），密码散列函数，消息摘要算法
 - SLC：Single-Level Cell（单层单元），存储单元，1bit/cell，速度快、寿命长、价格贵，10w次擦写
+- SSD：Solid State Disk/Solid State Drive（固态硬盘）
 - SSL：Secure Sockets Layer（安全套接层）
 - SSO：Single Sign On（单点登录）
+- SRS：Software Requirements Specification（软件需求说明书，软件规格说明书）
+- SQA：Software Quality Assurance（软件质量保证）
+- SCM：Software Configuration Management（软件配置管理）
 ## T
 - TCP：Transmission Control Protocol（传输控制协议）
 - TLC：Triple-Level Cell（），存储单元，3bit/cell，速度慢、寿命短、价格便宜，500次擦写
