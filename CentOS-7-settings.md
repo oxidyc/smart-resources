@@ -21,7 +21,7 @@ init 0
 init 6
 ```
 - 服务指令
-```
+```tcl
 # 防火墙
 systemctl stop firewalld.service #停止firewall
 systemctl disable firewalld.service #禁止firewall开机启动
@@ -97,3 +97,4 @@ $ vi /etc/hosts                   # 编辑hosts文件，给127.0.0.1添加hostna
 
 $ cat /etc/hosts                  # 检查
 ```
+
