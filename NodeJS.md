@@ -204,3 +204,27 @@ $ npm cache clear
    ```
 
 
+# 插件安装
+
+### SASS插件安装
+1. 安装sass依赖包
+```tcl
+npm install sass-loader --save-dev
+npm install node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+```
+完美解决`Cannot download "https://github.com/sass/node-sass/releases/download/v4.13.1/win32-x64-64_binding.node"` 的问题
+
+2. 在build/webpack.base.conf.js的rules中添加如下配置
+```js
+{
+  test: /\.scss$/,
+  loader: ["style","css","sass"]
+}
+```
+3.在vue的style样式标签中使用`lang=“scss”`调用
+```css
+<style lang="scss" scoped>
+$color: red;
+div {color:$color;}
+</style>
+```
